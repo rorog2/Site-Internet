@@ -1,6 +1,6 @@
 /*Structure de la page*/
 body{
-	background-color: #000033;
+	background-color: #00004B;
 }
 
 header{
@@ -9,7 +9,8 @@ header{
 	background-color: gray;
 	margin: 0px;
 	padding: 0px;
-	border: 3px;
+	border: 0.18em;
+	border-color: rgb(200, 200, 200);
 	border-style: solid;
 	border-radius: 1em;
 }
@@ -21,8 +22,9 @@ nav{
 	float: left;
 	margin-top: 0.5%;
 	border-radius: 1em;
+	border: 0.18em;
+	border-color: rgb(200, 200, 200);
 	border-style: solid;
-	border: 3px;
 	position: fixed;
 }
 
@@ -38,6 +40,28 @@ footer{
 	border-radius: 1em;
 }
 
+figcaption.logo{
+	text-align: center;
+	font-style: 70%;
+	color: rgb(40, 40, 40);
+	border: 0em;
+	border-top: 0.1em;
+	border-color: rgb(40, 40, 40);
+	border-style: solid;
+	width: 40%;
+}
+
+figcaption{
+	text-align: center;
+	font-style: 70%;
+	color: rgb(240, 240, 240);
+	border: 0em;
+	border-top: 0.1em;
+	border-color: black;
+	border-style: solid;
+	width: 30%;
+}
+
 /*Footer*/
 p.footer{
 	color: #D7D7D7;
@@ -45,14 +69,16 @@ p.footer{
 
 /*Corps de la page*/
 div.general{
-	border-color: white;
+	border: 0.18em;
+	border-color: rgb(200, 200, 200);
 	background-color: gray;
-	margin-top: 5%;
+	border-style: solid;
+	margin-top: 4%;
 	margin-right: 2%;
 	margin-left: 17%;
 	margin-bottom: 2%;
 	padding-top: 0.5%;
-	padding-bottom: 0.5%;
+	padding-bottom: 1%;
 }
 
 #centrer_texte{
@@ -64,6 +90,15 @@ p{
 	margin-right: 2em;
 }
 
+h3{
+	font-size: 200%;
+	font-family: comic sans ms;
+}
+
+h4{
+	font-size: 150%;
+	font-family: comic sans ms;
+}
 /*Navigation*/
 ul.navigation{
 	padding-bottom: 4%;
