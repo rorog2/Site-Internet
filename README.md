@@ -1,2 +1,4 @@
 # Site-Internet
-Site internet  de romain GG
+Ce site regroupe plusieur type d'informations:
+	- Calcul
+	- Explication des composant

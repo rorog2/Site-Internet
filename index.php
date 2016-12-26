@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['pseudo'] = 'autre';
+?>
+
 <!DOCTYPE html>
 <html>
 <!-- Onglet -->
@@ -18,8 +23,12 @@
 
     	<!-- Navigation -->
     	<nav>
-    		<?php if(isset($_SESSION['pseudo'])){include("tableaux_connecter.php");}else{include("tableaux_non_connecter.php");} ?>
+    		<?php include('affichage_tableaux.php'); ?>
     	</nav>
+        <nav class="dessous">
+            <p>Nombre de visiteur: </p>
+            <p>Membres connecté: </p>
+        </nav>
 
     	<!-- Page -->
     	<div class="general">

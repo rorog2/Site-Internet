@@ -22,7 +22,7 @@ session_start();
 
         <!-- Navigation -->
         <nav>
-            <?php if(isset($_SESSION['pseudo'])){include("tableaux_connecter.php");}else{include("tableaux_non_connecter.php");} ?>
+            <?php include('affichage_tableaux.php'); ?>
         </nav>
         <nav class="dessous">
             <p>Nombre de visiteur: </p>
@@ -31,7 +31,18 @@ session_start();
 
         <!-- Page -->
         <div class="general">
-            
+            <?php
+            if(isset($_GET['deconnection'])){
+                session_destroy();
+                header('Location: index.php');
+            }
+            elseif(isset($_GET['inscription'])){
+
+            }
+            else{
+
+            }
+            ?>
         </div>
 
         <!-- Pied de page -->
@@ -40,4 +51,5 @@ session_start();
         </footer>
 <!-- Fin de la page -->  
     </body>
+    <script src="script.js"></script>
 </html>

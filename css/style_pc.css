@@ -1,3 +1,4 @@
+/*-----------------------------------------------------------------------------------------*/
 /*Structure de la page*/
 body{
 	background-color: #00004B;
@@ -27,6 +28,18 @@ nav{
 	border-style: solid;
 	position: fixed;
 }
+nav.dessous{
+	width: 15%;
+	height: auto;
+	background-color: gray;
+	float: left;
+	margin-top: 32.5%;
+	border-radius: 1em;
+	border: 0.18em;
+	border-color: rgb(200, 200, 200);
+	border-style: solid;
+	position: fixed;
+}
 
 footer{
 	width: 100%;
@@ -36,7 +49,7 @@ footer{
 	padding: 0px;
 	border: 3px;
 	border-style: solid;
-	border-color: #D7D7D7;
+	border-color: rgb(200, 200, 200);
 	border-radius: 1em;
 }
 
@@ -61,7 +74,7 @@ figcaption{
 	border-style: solid;
 	width: 30%;
 }
-
+/*-----------------------------------------------------------------------------------------*/
 /*Footer*/
 p.footer{
 	color: #D7D7D7;
@@ -99,6 +112,8 @@ h4{
 	font-size: 150%;
 	font-family: comic sans ms;
 }
+
+/*-----------------------------------------------------------------------------------------*/
 /*Navigation*/
 ul.navigation{
 	padding-bottom: 4%;
