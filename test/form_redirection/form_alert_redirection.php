@@ -8,14 +8,18 @@ session_start();
     <head>
         <meta charset="utf-8" />
         <title>Electron's ique</title>
-        <link rel="icon" type="image/png" href="images/logo.png" />
-        <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
+        <link rel="icon" type="image/png" href="../../images/logo.png" />
+        <link rel="stylesheet" type="text/css" href="../../css/style_pc.css" />
         <script>
         function redirection(){
         var nom = document.getElementById("nom").value;
+        var form = document.getElementById("formulaire");
         alert("Votre nom est " + nom);
-        if(nom != "admin"){
-            return false;
+        if(nom === "admin"){
+            form.submit();
+        }
+        else{
+            form.reset();
         }
         }
         </script>
@@ -25,7 +29,7 @@ session_start();
     <body>
         <!-- Tete de page -->
         <header>
-            <img src="images/logo.png" alt="Logo du site" id="logo_baniere" />
+            <img src="../../images/logo.png" alt="Logo du site" id="logo_baniere" />
             <h1 style="display: inline-block;">Electron's ique</h1>
         </header>
 
@@ -39,11 +43,11 @@ session_start();
 
         <!-- Page -->
         <div class="general">
-            <form method="post" action="index.php">
+            <form action="../../index.php" method="post" id="formulaire">
                 <p>
                     <label for="nom">Votre nom: </label><input type="text" name="nom" id="nom" placeholder="Votre nom..." />
                     <br />
-                    <input type="submit" value="Redirection" onclick="redirection()" />
+                    <input type="button" value="Redirection" onclick="redirection()" />
                 </p>
             </form>
         </div>
