@@ -35,12 +35,12 @@ session_start();
             elseif(isset($_GET['mdpoublie'])){
                 
             }
-            elseif(isset($_GET['inscription'])){ ?>
+            elseif(isset($_GET['inscription']) AND !isset($_SESSION['pseudo'])){ ?>
                 <form action="traitement.php?inscription" method="post" onsubmit="verification_inscription(); return false;">
 
                 </form>
             <?php }
-            else{ ?>
+            elseif(isset($_GET['connection']) AND !isset($_SESSION['pseudo'])){ ?>
                 <h1 id="centrer_texte">Connection</h1>
                 <p>Vous connecter vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
                 <form action="traitement.php?connection" method="post" onsubmit="verification_connection(); return false;">
@@ -54,6 +54,9 @@ session_start();
                 <p>Vous avez oublié votre mot de passe ? <a href="administration.php?mdpoublie">Cliquez ici...</a></p>
                 <p>Vous n'ete pas encore inscript ? <a href="administration.php?inscription">Inscrivez-vous...</a></p>
             <?php }
+            else{
+                
+            }
             ?>
         </div>
 
