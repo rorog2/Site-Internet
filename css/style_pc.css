@@ -39,6 +39,8 @@ footer{
 	border-style: solid;
 	border-color: rgb(200, 200, 200);
 	border-radius: 1em;
+}
+footer.petit{
 	position: absolute;
 	bottom: 1%;
 }
@@ -57,10 +59,10 @@ figcaption.logo{
 figcaption{
 	text-align: center;
 	font-style: 70%;
-	color: rgb(240, 240, 240);
+	color: rgb(40, 40, 40);
 	border: 0em;
 	border-top: 0.1em;
-	border-color: black;
+	border-color: rgb(40, 40, 40);
 	border-style: solid;
 	width: 30%;
 }
@@ -120,6 +122,14 @@ a.navigation{
 	text-decoration: none;
 	color: black;
 }
+a:visited.navigation{
+	text-decoration: none;
+	color: black;
+}
+a:focus.navigation{
+	text-decoration: none;
+	color: black;
+}
 
 /*Baniere*/
 #logo_baniere{
@@ -133,7 +143,30 @@ fieldset{
 	margin-left: 2em;
 	margin-right: 2em;
 	width: 30%;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+legend{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+label{
+	display: block;
 }
 
 /*-----------------------------------------------------------------------------------------*/
 /*Lien*/
+a{
+	text-decoration: none;
+	color: #3F3FFE;
+}
+a:visited{
+	text-decoration: none;
+	color: #3F3FFE;
+}
+a:focus{
+	text-decoration: none;
+	color: #3F3FFE;
+}

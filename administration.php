@@ -1,5 +1,20 @@
 <?php
 session_start();
+
+function classe(){
+    if(isset($_GET['inscription'])){
+        return '';
+    }
+    elseif(isset($_GET['connexion'])){
+        return 'petit';
+    }
+    elseif(isset($_GET['mdpoublie'])){
+        return 'petit';
+    }
+    else{
+        return '';
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -33,35 +48,27 @@ session_start();
                 header('Location: index.php');
             }
             elseif(isset($_GET['mdpoublie'])){
-                
+                include('formulaire_administration/mdpoublie.php');
             }
-            elseif(isset($_GET['inscription']) AND !isset($_SESSION['pseudo'])){ ?>
-                <form action="traitement.php?inscription" method="post" onsubmit="verification_inscription(); return false;">
-
-                </form>
-            <?php }
-            elseif(isset($_GET['connection']) AND !isset($_SESSION['pseudo'])){ ?>
-                <h1 id="centrer_texte">Connection</h1>
-                <p>Vous connecter vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
-                <form action="traitement.php?connection" method="post" onsubmit="verification_connection(); return false;">
-                    <fieldset>
-                        <legend>Connection</legend>
-                        <label for="pseudo">Pseudo: </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudo..." /><br><br>
-                        <label for="mdp">Mot de passe: </label><input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." /><br><br>
-                        <input type="button" onclick="verification_connection()" value="Connection" />
-                    </fieldset>
-                </form>
-                <p>Vous avez oublié votre mot de passe ? <a href="administration.php?mdpoublie">Cliquez ici...</a></p>
-                <p>Vous n'ete pas encore inscript ? <a href="administration.php?inscription">Inscrivez-vous...</a></p>
-            <?php }
+            elseif(isset($_GET['inscription']) AND !isset($_SESSION['pseudo'])){
+                include('formulaire_administration/inscription.php');
+            }
+            elseif(isset($_GET['connexion']) AND !isset($_SESSION['pseudo'])){
+                include('formulaire_administration/connexion.php');
+            }
             else{
-                
+                echo '<h1 id="centrer_texte" style="font-color:rgb(200, 0, 0);">ERREUR !</h1>
+                        <center><figure>
+                            <img src="images/erreur.png" alt="LED" style="width: 30%;" />
+                            <figcaption>Erreur !</figcaption>
+                        </figure></center>
+                        <p id="centrer_texte">Cette page n\'existe pas ! <a href="index.php">Retour a l\'accueil</a></p>';
             }
             ?>
         </div>
 
         <!-- Pied de page -->
-        <footer>
+        <footer class="<?php echo classe(); ?>">
             <p id="centrer_texte" class="footer">Vous pouvez nous retrouver sur les réseaux sociaux !</p>
         </footer>
 <!-- Fin de la page -->  
