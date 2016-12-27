@@ -24,10 +24,6 @@ session_start();
         <nav>
             <?php include('affichage_tableaux.php'); ?>
         </nav>
-        <nav class="dessous">
-            <p>Nombre de visiteur: </p>
-            <p>Membres connecté: </p>
-        </nav>
 
         <!-- Page -->
         <div class="general">
@@ -36,12 +32,28 @@ session_start();
                 session_destroy();
                 header('Location: index.php');
             }
-            elseif(isset($_GET['inscription'])){
-
+            elseif(isset($_GET['mdpoublie'])){
+                
             }
-            else{
+            elseif(isset($_GET['inscription'])){ ?>
+                <form action="traitement.php?inscription" method="post" onsubmit="verification_inscription(); return false;">
 
-            }
+                </form>
+            <?php }
+            else{ ?>
+                <h1 id="centrer_texte">Connection</h1>
+                <p>Vous connecter vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
+                <form action="traitement.php?connection" method="post" onsubmit="verification_connection(); return false;">
+                    <fieldset>
+                        <legend>Connection</legend>
+                        <label for="pseudo">Pseudo: </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudo..." /><br><br>
+                        <label for="mdp">Mot de passe: </label><input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." /><br><br>
+                        <input type="button" onclick="verification_connection()" value="Connection" />
+                    </fieldset>
+                </form>
+                <p>Vous avez oublié votre mot de passe ? <a href="administration.php?mdpoublie">Cliquez ici...</a></p>
+                <p>Vous n'ete pas encore inscript ? <a href="administration.php?inscription">Inscrivez-vous...</a></p>
+            <?php }
             ?>
         </div>
 
@@ -51,5 +63,5 @@ session_start();
         </footer>
 <!-- Fin de la page -->  
     </body>
-    <script src="script.js"></script>
+    <script src="administration.js"></script>
 </html>

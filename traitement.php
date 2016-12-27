@@ -27,7 +27,7 @@ session_start();
         
         <!-- Page -->
         <div class="general">
-            
+            <h1 id="centrer_texte">Vous allez être rediriger vers la page d'accueil</h1>
         </div>
 
         <!-- Pied de page -->
@@ -36,4 +36,3 @@ session_start();
         </footer>
 <!-- Fin de la page -->  
     </body>
-</html>

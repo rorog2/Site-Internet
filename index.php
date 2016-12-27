@@ -24,17 +24,13 @@ session_start();
     	<nav>
     		<?php include('affichage_tableaux.php'); ?>
     	</nav>
-        <nav class="dessous">
-            <p>Nombre de visiteur: </p>
-            <p>Membres connecté: </p>
-        </nav>
 
     	<!-- Page -->
     	<div class="general">
     		<h1 id="centrer_texte"><u>ELECTRON'S IQUE</u></h1>
     		<center><figure>
                 <img src="images/logo.png" alt="LED" style="width: 40%;" />
-                <figcaption class="logo">LED</figcaption>
+                <figcaption class="logo">Logo du site (LED)</figcaption>
             </figure></center>
             <p id="centrer_texte">Bienvenue sur le site electron's ique, sur ce site vous aurez des information sur des calcul, des composants en rapport avec l'électronique. Vous pourrez aussi discuter dans le chat pour poser vos questions ou avoir des informations</p>
     	</div>

@@ -43,7 +43,7 @@ session_start();
 
         <!-- Page -->
         <div class="general">
-            <form action="../../index.php" method="post" id="formulaire">
+            <form action="../../index.php" method="post" id="formulaire" onsubmit="alert('NON, NON'); return false;">
                 <p>
                     <label for="nom">Votre nom: </label><input type="text" name="nom" id="nom" placeholder="Votre nom..." />
                     <br />

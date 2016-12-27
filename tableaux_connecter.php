@@ -9,3 +9,4 @@
     <li class="navigation"><a href="index.php" class="navigation">Gestion du compte</a></li>
     <li class="navigation"><a href="administration.php?deconnection" class="navigation">Déconnection</a></li>
 </ul>
+<p>Membres connecter:</p>

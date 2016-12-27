@@ -9,3 +9,4 @@
     <li class="navigation"><a href="administration.php" class="navigation">Se connecter</a></li>
     <li class="navigation"><a href="administration.php?inscription" class="navigation">Inscription</a></li>
 </ul>
+<p>Membres connecter:</p>
