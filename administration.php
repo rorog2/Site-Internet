@@ -3,12 +3,19 @@ session_start();
 
 function classe(){
     if(isset($_GET['inscription'])){
+        $header = 'inscription';
         return '';
     }
     elseif(isset($_GET['connexion'])){
+        $header = 'connexion';
         return 'petit';
     }
     elseif(isset($_GET['mdpoublie'])){
+        $header = 'mot de passe oublié';
+        return 'petit';
+    }
+    elseif(isset($_GET['changermdp'])){
+        $header = 'changement mot de passe';
         return 'petit';
     }
     else{
@@ -56,13 +63,11 @@ function classe(){
             elseif(isset($_GET['connexion']) AND !isset($_SESSION['pseudo'])){
                 include('formulaire_administration/connexion.php');
             }
+            elseif(isset($_GET['changermdp']) AND isset($_SESSION['pseudo'])){
+                include('formulaire_administration/changer_mdp.php');
+            }
             else{
-                echo '<h1 id="centrer_texte" style="font-color:rgb(200, 0, 0);">ERREUR !</h1>
-                        <center><figure>
-                            <img src="images/erreur.png" alt="LED" style="width: 30%;" />
-                            <figcaption>Erreur !</figcaption>
-                        </figure></center>
-                        <p id="centrer_texte">Cette page n\'existe pas ! <a href="index.php">Retour a l\'accueil</a></p>';
+                header('Location: administration.php?connexion');
             }
             ?>
         </div>
@@ -73,5 +78,4 @@ function classe(){
         </footer>
 <!-- Fin de la page -->  
     </body>
-    <script src="administration.js"></script>
 </html>

@@ -22,7 +22,7 @@ session_start();
 
         <!-- Navigation -->
         <nav>
-            <?php if(isset($_SESSION['pseudo'])){include("tableaux_connecter.php");}else{include("tableaux_non_connecter.php");} ?>
+            <?php include('affichage_tableaux.php'); ?>
         </nav>
         
         <!-- Page -->
