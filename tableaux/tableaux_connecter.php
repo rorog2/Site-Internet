@@ -6,7 +6,7 @@
     <li class="navigation"><a href="index.php" class="navigation">Chat</a></li>
     <li class="navigation"><a href="index.php" class="navigation">Nos logiciels</a></li>
     <li class="navigation"><a href="index.php" class="navigation">A propos</a></li>
-    <li class="navigation"><a href="index.php" class="navigation">Gestion du compte</a></li>
+    <li class="navigation"><a href="gestion_compte.php" class="navigation">Gestion du compte</a></li>
     <li class="navigation"><a href="administration.php?deconnection" class="navigation">Déconnection</a></li>
 </ul>
 <p>Membres connecter:</p>
