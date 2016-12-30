@@ -97,12 +97,14 @@ p{
 }
 
 h3{
+	margin-left: 2em;
 	font-size: 200%;
 	font-family: comic sans ms;
 }
 
 h4{
-	font-size: 150%;
+	margin-left: 2em;
+	font-size: 130%;
 	font-family: comic sans ms;
 }
 
@@ -156,6 +158,10 @@ label{
 	display: block;
 }
 
+label.radio{
+	display: inline;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 /*Lien*/
 a{
@@ -169,4 +175,24 @@ a:visited{
 a:focus{
 	text-decoration: none;
 	color: #3F3FFE;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*Tableaux*/
+table
+{
+    border-collapse: collapse;  /*Coller les cellules*/
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+    width: 15%;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*Autre commun*/
+.espace{
+	margin-left: 2em;
+	margin-right: 2em;
 }

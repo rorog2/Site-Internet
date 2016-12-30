@@ -68,6 +68,7 @@ function random($car) {
                             document.location.href = "administration.php?connexion";
                         </script>';
                 }
+                $connexion->closeCursor();
             }
             elseif(isset($_GET['mdpoublie'])){
                 $pseudo = $_POST['pseudo'];
@@ -90,6 +91,7 @@ function random($car) {
                             document.location.href = "index.php";
                         </script>';
                     }
+                    $afficher_pseudo->closeCursor();
                 }
                 else{
                     $afficher_email = $bdd->prepare('SELECT pseudo FROM administration WHERE pseudo = :pseudo');
@@ -105,6 +107,7 @@ function random($car) {
                             document.location.href = "index.php";
                         </script>';
                     }
+                    $afficher_email->closeCursor();
                 }
             }
             elseif(isset($_GET['inscription'])){
@@ -121,6 +124,8 @@ function random($car) {
                         alert("Vous êtes inscrit !");
                         document.location.href = "administration.php?connexion";
                     </script>';
+
+                $inscription->closeCursor();
             }
             elseif(isset($_GET['changermdp'])){
                 $changer_mot_de_passe = $bdd->prepare('UPDATE administration SET mdp = :mdp, changer_mdp = 0 WHERE pseudo = :pseudo');
@@ -129,6 +134,7 @@ function random($car) {
                         alert("Votre mot de passe est à jour !");
                         document.location.href = "index.php";
                     </script>';
+                $changer_mot_de_passe->closeCursor();
             }
 
             ?>
