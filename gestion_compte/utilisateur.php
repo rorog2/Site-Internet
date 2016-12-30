@@ -42,12 +42,12 @@
 	</fieldset>
 </form>
 <h4>Suppression du compte</h4>
-<form action="gestion_compte.php?delete" method="post" id="formulaire" onsubmit="delete(); return false;">
-	<input type="button" onclick="delete();" value="Supprimmer mon compte" class="espace" />
+<form action="gestion_compte.php?delete" method="post" id="formulaire" onsubmit="verification_delete(); return false;">
+	<input type="button" onclick="verification_delete();" value="Supprimmer mon compte" class="espace" />
 </form>
 
 <script>
-function delete(){
+function verification_delete(){
 	var formulaire = document.getElementById("formulaire");
 	if(confirm("Voulez-vous vraiment supprimer votre compte ?")){
 		formulaire.submit();
@@ -100,8 +100,8 @@ elseif(isset($_GET['delete'])){
 	$delete->execute(array('pseudo' => $_SESSION['pseudo']));
 	session_destroy();
 	echo '<script>
-	alert("Votre compte à été supprimer avec succès !");
 	document.location.href = "index.php";
+	alert("Votre compte à été supprimer avec succès !");
 		</script>';
 }
 ?>

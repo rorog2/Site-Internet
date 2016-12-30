@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 25 Décembre 2016 à 19:21
+-- Généré le :  Ven 30 Décembre 2016 à 16:55
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -32,8 +32,18 @@ CREATE TABLE `administration` (
   `mdp` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
-  `prenom` varchar(255) NOT NULL
+  `prenom` varchar(255) NOT NULL,
+  `changer_mdp` int(11) NOT NULL,
+  `desactiver` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `administration`
+--
+
+INSERT INTO `administration` (`id`, `pseudo`, `mdp`, `email`, `nom`, `prenom`, `changer_mdp`, `desactiver`) VALUES
+(1, 'admin', 'kf2aqybz', '', 'Admin', 'Admin', 0, 0),
+(2, 'rorog2', 'romaing2', 'rorog2@live.fr', 'GG', 'Romain', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -46,6 +56,17 @@ CREATE TABLE `chat` (
   `pseudo` varchar(50) NOT NULL,
   `message` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='Table contenant les messages du chat';
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `connectes`
+--
+
+CREATE TABLE `connectes` (
+  `ip` varchar(15) NOT NULL,
+  `timestamp` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Index pour les tables exportées
@@ -71,7 +92,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT pour la table `administration`
 --
 ALTER TABLE `administration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `chat`
 --
