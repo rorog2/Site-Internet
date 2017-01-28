@@ -41,7 +41,7 @@ footer{
 	border-radius: 1em;
 }
 footer.petit{
-	position: absolute;
+	position: bottom;
 	bottom: 1%;
 }
 
@@ -186,7 +186,7 @@ table
 td, th /* Mettre une bordure sur les td ET les th */
 {
     border: 1px solid black;
-    width: 15%;
+    width: 12%;
     text-align: center;
 }
 

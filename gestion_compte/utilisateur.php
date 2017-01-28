@@ -1,4 +1,4 @@
-<h4>Information personnel:</h4>
+<h4>Informations personnels:</h4>
 <table class="espace">
 	<tr>
 		<th>Pseudo</th>

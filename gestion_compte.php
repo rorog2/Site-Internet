@@ -35,14 +35,23 @@ catch(Exception $e)
         
         <!-- Page -->
         <div class="general">
-            <h1 id="centrer_texte">Gestion du compte</h1>
-            <p>Vous êtes connecté en tant que: <?php echo $_SESSION['pseudo']; ?>;</p>
-            <?php
-            if($_SESSION['pseudo'] == 'admin'){
-                include('gestion_compte/admin.php');
+            <?php if(isset($_SESSION['pseudo'])){ ?>
+                <h1 id="centrer_texte">Gestion du compte</h1>
+                <p>Vous êtes connecté en tant qu<?php if($_SESSION['pseudo'] == 'admin'){ echo '\'administrateur'; } else{ echo 'e: '.$_SESSION['pseudo']; } ?>;</p>
+                <?php
+                if($_SESSION['pseudo'] == 'admin'){
+                    include('gestion_compte/admin.php');
+                }
+                else{
+                    include('gestion_compte/utilisateur.php');
+                }
             }
             else{
-                include('gestion_compte/utilisateur.php');
+                echo '<h1 id="centrer_texte"><u>Reservée au personne ayant un compte</u></h1>
+                    <center><figure>
+                        <img src="images/erreur.png" alt="LED" style="width: 35%;" />
+                        <figcaption class="logo">ERREUR</figcaption>
+                    </figure></center>';
             }
             ?>
         </div>
