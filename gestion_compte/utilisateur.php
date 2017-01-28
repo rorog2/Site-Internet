@@ -13,7 +13,7 @@
 		$info->execute(array('pseudo' => $_SESSION['pseudo']));
 		while($liste = $info->fetch()){
 			echo '<td>'.$liste['pseudo'].'</td>
-				<td>'.$liste['mdp'].'</td>
+				<td id="motpasse">'.$liste['mdp'].'</td>
 				<td>'.$liste['email'].'</td>
 				<td>'.$liste['nom'].'</td>
 				<td>'.$liste['prenom'].'</td>';
@@ -49,7 +49,8 @@
 <script>
 function verification_delete(){
 	var formulaire = document.getElementById("formulaire");
-	if(confirm("Voulez-vous vraiment supprimer votre compte ?")){
+	var mdp = document.getElementById("motpasse").innerText;
+	if(prompt("Entrez votre mot de passe pour poursuivre la suppression:") === mdp){
 		formulaire.submit();
 	}
 	else{
