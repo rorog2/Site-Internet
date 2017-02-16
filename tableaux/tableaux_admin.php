@@ -7,6 +7,7 @@
     <li class="navigation"><a href="gestion_compte.php" class="navigation">Gestion du compte</a></li>
     <li class="navigation"><a href="index.php" class="navigation">Liste des choses a faire</a></li>
     <li class="navigation"><a href="index.php" class="navigation">Controle du port GPIO</a></li>
+    <li class="navigation"><a href="cryptage.php" class="navigation">Crypter .htpasswd</a></li>
     <li class="navigation"><a href="index.php" class="navigation">Nos logiciels</a></li>
     <li class="navigation"><a href="index.php" class="navigation">A propos</a></li>
     <li class="navigation"><a href="administration.php?deconnection" class="navigation">Déconnection</a></li>
