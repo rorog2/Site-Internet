@@ -48,10 +48,11 @@ function random($car) {
             <h1 id="centrer_texte">Vous allez être rediriger vers la page d'accueil</h1>
             <?php
             if(isset($_GET['connexion'])){
-                $connexion = $bdd->prepare('SELECT pseudo FROM administration WHERE pseudo = :pseudo AND mdp = :mdp');
+                $connexion = $bdd->prepare('SELECT pseudo, prenom FROM administration WHERE pseudo = :pseudo AND mdp = :mdp');
                 $connexion->execute(array('pseudo' => htmlspecialchars($_POST['pseudo']), 'mdp' => htmlspecialchars($_POST['mdp'])));
                 if($row = $connexion->fetch()){
                     $_SESSION['pseudo'] = $row['pseudo'];
+                    $_SESSION['prenom'] = $row['prenom'];
                     $changer_mdp_oublie = $bdd->prepare('SELECT changer_mdp FROM administration WHERE pseudo = :p');
                     $changer_mdp_oublie->execute(array('p' => $_SESSION['pseudo']));
                     $un = $changer_mdp_oublie->fetch();

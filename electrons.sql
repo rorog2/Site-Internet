@@ -42,7 +42,7 @@ CREATE TABLE `administration` (
 --
 
 INSERT INTO `administration` (`id`, `pseudo`, `mdp`, `email`, `nom`, `prenom`, `changer_mdp`, `desactiver`) VALUES
-(1, 'admin', 'kf2aqybz', '', 'Admin', 'Admin', 0, 0),
+(1, 'admin', 'kf2aqybz', '', 'Administrateur', 'Administrateur', 0, 0),
 (2, 'rorog2', 'romaing2', 'rorog2@live.fr', 'GG', 'Romain', 0, 0);
 
 -- --------------------------------------------------------

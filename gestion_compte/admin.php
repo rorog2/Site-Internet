@@ -1,30 +1,42 @@
 <h4>Informations personnels des utilisateurs:</h4>
 <table class="espace">
 	<tr>
-		<th>ID</th>
-		<th>Pseudo</th>
-		<th>Mot de passe</th>
-		<th>Email</th>
-		<th>Nom</th>
-		<th>Prénom</th>
-		<th>Désactiver</th>
+		<th class="admin">ID</th>
+		<th class="admin">Pseudo</th>
+		<th class="admin">Mot de passe</th>
+		<th class="admin">Email</th>
+		<th class="admin">Nom</th>
+		<th class="admin">Prénom</th>
+		<th class="admin">Changer MDP</th>
+		<th class="admin">Désactiver</th>
 	</tr>
 	<?php
 	$info = $bdd->prepare('SELECT * FROM administration');
 	$info->execute();
 	while($liste = $info->fetch()){
-		echo '</tr><td>'.$liste['id'].'</td>
-			<td>'.$liste['pseudo'].'</td>
-			<td>'.$liste['mdp'].'</td>
-			<td>'.$liste['email'].'</td>
-			<td>'.$liste['nom'].'</td>
-			<td>'.$liste['prenom'].'</td>
-			<td>'.$liste['desactiver'].'</td></tr>';
+		if($liste['changer_mdp'] == '1'){
+			$changer = 'Oui';
+		}
+		elseif($liste['changer_mdp'] == '0'){
+			$changer = 'Non';
+		}
+		echo '</tr><td class="admin">'.$liste['id'].'</td>
+			<td class="admin">'.$liste['pseudo'].'</td>
+			<td class="admin">'.$liste['mdp'].'</td>
+			<td class="admin">'.$liste['email'].'</td>
+			<td class="admin">'.$liste['nom'].'</td>
+			<td class="admin">'.$liste['prenom'].'</td>
+			<td class="admin">'.$changer.'</td>
+			<td class="admin">'.$liste['desactiver'].'</td></tr>';
 	}
 	?>
 </table>
 <h4>Modification des informations personnels</h4>
 <form action="gestion_compte.php?traitement" method="post">
+	<fieldset>
+		<legend>ID du compte</legend>
+		<label for="id_sup">ID:</label><input type="number" name="id_compte" id="id_compte" value="1" min="1" max="5000" />
+	</fieldset>
 	<fieldset>
 		<legend>Choix du type de modification</legend>
 		<input type="radio" name="type" value="mdp" id="mdp" /><label class="radio" for="mdp">Mot de passe</label><br />

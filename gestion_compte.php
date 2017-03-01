@@ -1,5 +1,6 @@
 <?php
 session_start();
+require('affichage_nom.php');
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'macedoine224371', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -15,7 +16,7 @@ catch(Exception $e)
 <!-- Onglet -->
     <head>
         <meta charset="utf-8" />
-        <title>Gestion du compte: <?php echo $_SESSION['pseudo']; ?></title>
+        <title>Gestion du compte<?php nom(); ?></title>
         <link rel="icon" type="image/png" href="images/logo.png" />
         <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
     </head>

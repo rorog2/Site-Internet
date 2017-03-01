@@ -1,4 +1,5 @@
 <?php
+function detect_os_navigateur(void){
 // Simple browser and OS detection script. This will not work if User Agent is false.
 $agent = $_SERVER['HTTP_USER_AGENT'];
 
@@ -39,4 +40,5 @@ if($br=='Unknown'){ echo 'This is done when the Browser is Unknown. This is the 
 // Action when both browser and OS/Device are detected
 if($os=='Linux' && $br=='Firefox')  { echo 'This is done when the Browser is Firefox and the OS is Linux.'; }
 if($os=='Unknown' && $br=='Unknown'){ echo 'This is done when the Browser is Unknown and the OS is Unknown. This is the catch-the-rest failsafe'; }
+}
 ?>

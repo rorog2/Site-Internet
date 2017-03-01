@@ -1,5 +1,6 @@
 <?php
 session_start();
+require('affichage_nom.php');
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +8,7 @@ session_start();
 <!-- Onglet -->
     <head>
         <meta charset="utf-8" />
-        <title>Electron's ique<?php if(isset($_SESSION['pseudo'])){ echo ': '.$_SESSION['pseudo'];} ?></title>
+        <title>Electron's ique<?php nom(); ?></title>
         <link rel="icon" type="image/png" href="images/logo.png" />
         <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
     </head>

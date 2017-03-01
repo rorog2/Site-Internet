@@ -191,6 +191,13 @@ td, th /* Mettre une bordure sur les td ET les th */
     text-align: center;
 }
 
+td.admin, th.admin /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+    width: 8%;
+    text-align: center;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 /*Autre commun*/
 .espace{
