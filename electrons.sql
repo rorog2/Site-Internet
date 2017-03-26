@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 30 Décembre 2016 à 16:55
+-- Généré le :  Mer 22 Mars 2017 à 15:17
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -42,8 +42,21 @@ CREATE TABLE `administration` (
 --
 
 INSERT INTO `administration` (`id`, `pseudo`, `mdp`, `email`, `nom`, `prenom`, `changer_mdp`, `desactiver`) VALUES
-(1, 'admin', 'kf2aqybz', '', 'Administrateur', 'Administrateur', 0, 0),
+(1, 'admin', 'kf2aqybz', '', 'Admin', 'Admin', 0, 0),
 (2, 'rorog2', 'romaing2', 'rorog2@live.fr', 'GG', 'Romain', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `arduino`
+--
+
+CREATE TABLE `arduino` (
+  `id` int(11) NOT NULL,
+  `contenu` text NOT NULL,
+  `paragraphe` int(11) NOT NULL,
+  `important` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -79,6 +92,12 @@ ALTER TABLE `administration`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `arduino`
+--
+ALTER TABLE `arduino`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `chat`
 --
 ALTER TABLE `chat`
@@ -93,6 +112,11 @@ ALTER TABLE `chat`
 --
 ALTER TABLE `administration`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT pour la table `arduino`
+--
+ALTER TABLE `arduino`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `chat`
 --
