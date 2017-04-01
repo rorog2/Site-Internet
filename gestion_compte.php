@@ -3,7 +3,7 @@ session_start();
 require('affichage_nom.php');
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'macedoine224371', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'kf2aqybz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch(Exception $e)
 {
@@ -41,10 +41,10 @@ catch(Exception $e)
                 <p>Vous êtes connecté en tant qu<?php if($_SESSION['pseudo'] == 'admin'){ echo '\'administrateur'; } else{ echo 'e: '.$_SESSION['pseudo']; } ?>;</p>
                 <?php
                 if($_SESSION['pseudo'] == 'admin'){
-                    include('gestion_compte/admin.php');
+                    require('gestion_compte/admin.php');
                 }
                 else{
-                    include('gestion_compte/utilisateur.php');
+                    require('gestion_compte/utilisateur.php');
                 }
             }
             else{

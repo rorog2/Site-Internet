@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('affichage_nom.php');
+require('affichage_nom.php');
 
 function classe(){
     if(isset($_GET['inscription'])){

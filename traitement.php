@@ -2,7 +2,7 @@
 session_start();
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'macedoine224371', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'kf2aqybz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch(Exception $e)
 {
@@ -52,7 +52,6 @@ function random($car) {
                 $connexion->execute(array('pseudo' => htmlspecialchars($_POST['pseudo']), 'mdp' => htmlspecialchars($_POST['mdp'])));
                 if($row = $connexion->fetch()){
                     $_SESSION['pseudo'] = $row['pseudo'];
-                    $_SESSION['prenom'] = $row['prenom'];
                     $changer_mdp_oublie = $bdd->prepare('SELECT changer_mdp FROM administration WHERE pseudo = :p');
                     $changer_mdp_oublie->execute(array('p' => $_SESSION['pseudo']));
                     $un = $changer_mdp_oublie->fetch();

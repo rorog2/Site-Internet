@@ -20,6 +20,13 @@
 		elseif($liste['changer_mdp'] == '0'){
 			$changer = 'Non';
 		}
+
+		if($liste['desactiver'] == '1'){
+			$desactiver = 'Oui';
+		}
+		elseif($liste['desactiver'] == '0'){
+			$desactiver = 'Non';
+		}
 		echo '</tr><td class="admin">'.$liste['id'].'</td>
 			<td class="admin">'.$liste['pseudo'].'</td>
 			<td class="admin">'.$liste['mdp'].'</td>
@@ -27,7 +34,7 @@
 			<td class="admin">'.$liste['nom'].'</td>
 			<td class="admin">'.$liste['prenom'].'</td>
 			<td class="admin">'.$changer.'</td>
-			<td class="admin">'.$liste['desactiver'].'</td></tr>';
+			<td class="admin">'.$desactiver.'</td></tr>';
 	}
 	?>
 </table>
@@ -64,7 +71,7 @@
 	</fieldset>
 </form>
 <h4>Désactiver ou activer un compte</h4>
-<form action="gestion_compte.php?deac" method="post" id="formulaire" onsubmit="verification_delete(); return false;">
+<form action="gestion_compte.php?deac" method="post" id="formulaire" onsubmit="verification_ban(); return false;">
 	<fieldset>
 		<legend>Changer l'état d'un compte</legend>
 		<label for="id_deac">ID:</label><input type="number" name="id_deac" id="id_deac" value="1" min="1" max="5000" />
