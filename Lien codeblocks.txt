@@ -1,0 +1,7 @@
+http://wiki.codeblocks.org/index.php/Installing_Code::Blocks_from_source_on_Windows
+
+http://wiki.codeblocks.org/index.php/MinGW_installation
+
+http://wiki.codeblocks.org/index.php/Installing_Code::Blocks_nightly_build_on_Windows
+
+http://wiki.codeblocks.org/index.php/Installing_Code::Blocks_from_source_on_Linux
