@@ -3,7 +3,7 @@ session_start();
 require('affichage_nom.php');
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'kf2aqybz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'macedoine224371', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch(Exception $e)
 {

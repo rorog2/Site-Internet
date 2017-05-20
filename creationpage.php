@@ -2,7 +2,6 @@
 session_start();
 require('affichage_nom.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <!-- Onglet -->
