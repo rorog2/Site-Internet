@@ -54,4 +54,10 @@ function verification_inscription(){
 function nom_propre(mot){
     return (mot.charAt(0).toUpperCase() + mot.substring(1).toLowerCase());
 }
+document.addEventListener('keypress', function(e) {
+    var touche = e.keyCode;
+    if(touche === 13){
+        verification_inscription();
+    }
+});
 </script>

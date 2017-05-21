@@ -1,3 +1,7 @@
+<script type="text/javascript">
+
+</script>
+
 <h1 id="centrer_texte">Connexion</h1>
 <p>Vous connecter vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
 <form action="traitement.php?connexion" method="post" id="formulaire" onsubmit="verification_connexion(); return false;">
@@ -25,4 +29,10 @@ function verification_connexion(){
 		formulaire.reset();
 	}
 }
+document.addEventListener('keypress', function(e) {
+    var touche = e.keyCode;
+    if(touche === 13){
+    	verification_connexion();
+    }
+});
 </script>

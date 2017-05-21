@@ -70,8 +70,8 @@ require('affichage_nom.php');
                 <button>Bouton</button>
                 <input type="submit" value="Submit" style="display:inline-block; margin-left: 3em;" />
             </fieldset>
-            <fieldset><legend>Lien</legend>
-                <a href="#">Je suis un lien</a>
+            <fieldset id="lien"><legend>Lien</legend>
+                <a href="#lien">Je suis un lien</a>
             </fieldset>
             <fieldset><legend>Important</legend>
                 <div class="important">

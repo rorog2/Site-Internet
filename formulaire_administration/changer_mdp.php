@@ -22,4 +22,10 @@ function verification_changermdp(){
 		formulaire.reset();
 	}
 }
+document.addEventListener('keypress', function(e) {
+    var touche = e.keyCode;
+    if(touche === 13){
+    	verification_connexion();
+    }
+});
 </script>

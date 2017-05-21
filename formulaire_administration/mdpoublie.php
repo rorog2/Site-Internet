@@ -29,4 +29,10 @@ function verification_mdpoublie(){
 		formulaire.reset();
 	}
 }
+document.addEventListener('keypress', function(e) {
+    var touche = e.keyCode;
+    if(touche === 13){
+    	verification_mdpoublie();
+    }
+});
 </script>

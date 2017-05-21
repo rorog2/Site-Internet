@@ -41,16 +41,13 @@ session_start();
                 ?>
 
                 <p>Entrez votre login et votre mot de passe pour le crypter.</p>
-
+                <fieldset><legend>Cryptage du mot de passe</legend>
                 <form method="post">
-                    <p>
-                        Login : <input type="text" name="login"><br />
-                        Mot de passe : <input type="text" name="pass"><br /><br />
-    
+                        <label for="crypt_login">Login:</label><input type="text" name="login" id="crypt_login"><br /><br />
+                        <label for="crypt_pass">Mot de passe:</label><input type="text" name="pass" id="crypt_pass"><br /><br />
                         <input type="submit" value="Crypter !">
-                    </p>
                 </form>
-
+                </fieldset>
                 <?php
                 }
                 ?>

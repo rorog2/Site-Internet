@@ -27,10 +27,17 @@
 		elseif($liste['desactiver'] == '0'){
 			$desactiver = 'Non';
 		}
+
+		if($liste['email'] == ''){
+			$email = 'Non rempli';
+		}
+		else{
+			$email= $liste['email'];
+		}
 		echo '</tr><td class="admin">'.$liste['id'].'</td>
 			<td class="admin">'.$liste['pseudo'].'</td>
 			<td class="admin">'.$liste['mdp'].'</td>
-			<td class="admin">'.$liste['email'].'</td>
+			<td class="admin">'.$email.'</td>
 			<td class="admin">'.$liste['nom'].'</td>
 			<td class="admin">'.$liste['prenom'].'</td>
 			<td class="admin">'.$changer.'</td>
@@ -50,9 +57,12 @@
 		<input type="radio" name="type" value="email" id="email" /><label class="radio" for="email">Email</label><br />
 		<input type="radio" name="type" value="nom" id="nom" /><label class="radio" for="nom">Nom</label><br />
 		<input type="radio" name="type" value="prenom" id="prenom" /><label class="radio" for="prenom">Prénom</label><br />
+		<input type="radio" name="type" value="del" id="del" /><label class="radio" for="del">Suppression</label><br />
+		<input type="radio" name="type" value="ajout" id="ajout" /><label class="radio" for="ajout">Ajout</label><br />
+		<input type="radio" name="type" value="des" id="des" /><label class="radio" for="des">Désactivation</label><br />
 	</fieldset>
 	<fieldset>
-		<legend>Modification de la donnée</legend>
+		<legend>Modification d'une donnée</legend>
 		<label for="ancien">Ancienne donnée:</label><input type="text" name="ancien" id="ancien" placeholder="Ancienne donnée..." /><br><br>
 		<label for="nouvelle">Nouvelle donnée:</label><input type="text" name="nouvelle" id="nouvelle" placeholder="Nouvelle donnée..." /><br><br>
 		<label for="nouvelle2">Retaper la nouvelle donnée:</label><input type="text" name="nouvelle2" id="nouvelle2" placeholder="Nouvelle donnée..." />
@@ -127,3 +137,19 @@ elseif(isset($_GET['delete'])){
 		</script>';
 }
 ?>
+
+<script type="text/javascript">
+function admin_display(){
+	var mdp = document.getElementById("mdp");
+	var email = document.getElementById("email");
+	var nom = document.getElementById("nom");
+	var prenom = document.getElementById("prenom");
+	var suppression = document.getElementById("del");
+	var ajout = document.getElementById("ajout");
+	var desactivation = document.getElementById("des");
+
+	if(mdp === true || email === true || nom === true || prenom === true){
+		
+	}
+}
+</script>

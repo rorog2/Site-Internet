@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------------*/
 /*Structure de la page*/
-* {
-	outline: none;
+*:focus{
+	outline: 0;
 }
 
 body{
@@ -102,17 +102,17 @@ div.important{
 	border-color: rgba(120, 0, 0, 50);
 	background-color: rgba(200, 60, 60, 50);
 	border-style: solid;
-	border-width: 0.2em;
+	border-width: 0.19em;
 	border-radius: 0.5em;
 }
 img.important{
-	width: 15%;
+	width: 12%;
 	margin: 0.5em 0.5em 0.5em 0.5em;
 	display: inline-block;
 }
 p.important{
 	display: inline-block;
-	margin-left: 1em;
+	margin-left: 0;
 }
 
 #centrer_texte{
@@ -158,6 +158,7 @@ li.navigation{
 	box-shadow: 1px 1px 3px #666;
 	border-color: #575757;
 	margin-bottom: 0.2em;
+	font-size: 16px;
 }
 
 li.navigation:hover{
@@ -190,6 +191,7 @@ li.navigation_h{
 	box-shadow: 1px 1px 3px #666;
 	border-color: #575757;
 	margin-bottom: 0.2em;
+	font-size: 16px;
 }
 
 li.navigation_h:hover{
@@ -256,6 +258,7 @@ textarea{
 	width: 100%;
 	height: 10em;
 	font-family: calibri;
+	resize:none;
 }
 
 button, input[type="submit"], input[type="reset"], input[type="button"]{
@@ -325,6 +328,7 @@ input[type="radio"]{
 a{
 	text-decoration: none;
 	color: #3F3FFE;
+	font-style: italic;
 }
 a:visited{
 	text-decoration: none;
