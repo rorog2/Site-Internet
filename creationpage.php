@@ -1,6 +1,15 @@
 <?php
 session_start();
 require('affichage_nom.php');
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'macedoine224371', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(Exception $e)
+{
+    die('Erreur : '.$e->getMessage());
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,8 +36,23 @@ require('affichage_nom.php');
         
         <!-- Page -->
         <div class="general">
+        <center>
+            <ul class="navigation_h">
+                <li class="navigation_h" onclick="document.location.href = 'creationpage.php?createBDD'">Création BDD</li>
+                <li class="navigation_h" onclick="document.location.href = 'creationpage.php'">Création contenu</li>
+                <li class="navigation_h" onclick="document.location.href = 'creationpage.php?contenuBDD'">Contenu BDD</li>
+            </ul>
+        </center>
         <?php
-            include('creationpage/creation_page.php');
+            if(isset($_GET['createBDD'])){
+                include('creationpage/creationbdd.php');
+            }
+            elseif(isset($_GET['contenuBDD'])){
+                include('creationpage/contenubdd.php');
+            }
+            else{
+                include('creationpage/creation_page.php');
+            }
         ?>
         </div>
 

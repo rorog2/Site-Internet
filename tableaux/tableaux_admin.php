@@ -1,17 +1,59 @@
 <ul class="navigation">
     <h2>Menu</h2>
-    <li class="navigation"><a href="index.php" class="navigation">Accueil</a></li>
-    <li class="navigation"><a href="calcul/index.php" class="navigation">Calcul</a></li>
-    <li class="navigation"><a href="composants/index.php" class="navigation">Composants</a></li>
-    <li class="navigation"><a href="chat.php" class="navigation">Chat</a></li>
-    <li class="navigation"><a href="gestion_compte.php" class="navigation">Gestion du compte</a></li>
-    <li class="navigation"><a href="liste/index.php" class="navigation">Liste des choses a faire</a></li>
-    <li class="navigation"><a href="gpio.php" class="navigation">Controle du port GPIO</a></li>
-    <li class="navigation"><a href="cryptage.php" class="navigation">Crypter .htpasswd</a></li>
-    <li class="navigation"><a href="creationpage.php" class="navigation">Créer une page</a></li>
-    <li class="navigation"><a href="style.php" class="navigation">Style</a></li>
-    <li class="navigation"><a href="logiciels.php" class="navigation">Nos logiciels</a></li>
-    <li class="navigation"><a href="apropos.php" class="navigation">A propos</a></li>
-    <li class="navigation"><a href="administration.php?deconnection" class="navigation">Déconnection</a></li>
+    <li class="navigation" onclick="index();">Accueil</li>
+    <li class="navigation" onclick="calcul();">Calcul</li>
+    <li class="navigation" onclick="composants();">Composants</li>
+    <li class="navigation" onclick="chat();">Chat</li>
+    <li class="navigation" onclick="gestion_compte();">Gestion du compte</li>
+    <li class="navigation" onclick="liste();">Liste des choses a faire</li>
+    <li class="navigation" onclick="gpio();">Controle du port GPIO</li>
+    <li class="navigation" onclick="cryptage();">Crypter .htpasswd</li>
+    <li class="navigation" onclick="creation();">Créer une page</li>
+    <li class="navigation" onclick="style_css();">Style</li>
+    <li class="navigation" onclick="logiciels();">Nos logiciels</li>
+    <li class="navigation" onclick="apropos();">A propos</li>
+    <li class="navigation" onclick="deconnection();">Déconnection</li>
 </ul>
 <p>Membres connecter:</p>
+
+<script type="text/javascript">
+    function index(){
+        document.location.href = 'index.php';
+    }
+    function calcul(){
+        document.location.href = 'calcul/index.php';
+    }
+    function composants(){
+        document.location.href = 'composants/index.php';
+    }
+    function chat(){
+        document.location.href = 'chat.php';
+    }
+    function gestion_compte(){
+        document.location.href = 'gestion_compte.php';
+    }
+    function liste(){
+        document.location.href = 'liste/index.php';
+    }
+    function gpio(){
+        document.location.href = 'gpio.php';
+    }
+    function cryptage(){
+        document.location.href = 'cryptage.php';
+    }
+    function creation(){
+        document.location.href = 'creationpage.php';
+    }
+    function style_css(){
+        document.location.href = 'style.php';
+    }
+    function logiciels(){
+        document.location.href = 'logiciels.php';
+    }
+    function apropos(){
+        document.location.href = 'apropos.php';
+    }
+    function deconnection(){
+        document.location.href = 'administration.php?deconnection.php';
+    }
+</script>

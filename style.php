@@ -69,7 +69,16 @@ require('affichage_nom.php');
             <fieldset><legend>Boutons</legend>
                 <button>Bouton</button>
                 <input type="submit" value="Submit" style="display:inline-block; margin-left: 3em;" />
-            </fieldset> 
+            </fieldset>
+            <fieldset><legend>Lien</legend>
+                <a href="#">Je suis un lien</a>
+            </fieldset>
+            <fieldset><legend>Important</legend>
+                <div class="important">
+                    <img class="important" src="images/attention.png" alt="Important" />
+                    <p class="important">Bonjour je suis bien le message important</p>
+                </div>
+            </fieldset>  
             <?php } 
             else{
 
