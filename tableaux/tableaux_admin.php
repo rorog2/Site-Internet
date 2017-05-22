@@ -8,7 +8,7 @@
     <li class="navigation" onclick="liste();">Liste des choses a faire</li>
     <li class="navigation" onclick="gpio();">Controle du port GPIO</li>
     <li class="navigation" onclick="cryptage();">Crypter .htpasswd</li>
-    <li class="navigation" onclick="creation();">Créer une page</li>
+    <li class="navigation" onclick="creation();">Gestion du site</li>
     <li class="navigation" onclick="style_css();">Style</li>
     <li class="navigation" onclick="logiciels();">Nos logiciels</li>
     <li class="navigation" onclick="apropos();">A propos</li>
@@ -54,6 +54,6 @@
         document.location.href = 'apropos.php';
     }
     function deconnection(){
-        document.location.href = 'administration.php?deconnection.php';
+        document.location.href = 'administration.php?deconnection';
     }
 </script>

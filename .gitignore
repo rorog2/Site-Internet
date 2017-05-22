@@ -2,3 +2,5 @@
 *.bak
 *.tmp
 *.hnd-journal
+.htaccess
+.htpasswd

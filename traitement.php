@@ -52,6 +52,7 @@ function random($car) {
                 $connexion->execute(array('pseudo' => htmlspecialchars($_POST['pseudo']), 'mdp' => htmlspecialchars($_POST['mdp'])));
                 if($row = $connexion->fetch()){
                     $_SESSION['pseudo'] = $row['pseudo'];
+                    $_SESSION['prenom'] = $row['prenom'];
                     $changer_mdp_oublie = $bdd->prepare('SELECT changer_mdp FROM administration WHERE pseudo = :p');
                     $changer_mdp_oublie->execute(array('p' => $_SESSION['pseudo']));
                     $un = $changer_mdp_oublie->fetch();
