@@ -18,7 +18,7 @@ require('affichage_nom.php');
         <!-- Tete de page -->
         <header>
             <img src="images/logo.png" alt="Logo du site" id="logo_baniere" />
-            <h1 style="display: inline-block;">Electron's ique</h1>
+            <h1 style="display: inline-block;">Style du site<?php echo nom(); ?></h1>
         </header>
 
         <!-- Navigation -->

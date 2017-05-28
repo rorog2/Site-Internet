@@ -16,7 +16,7 @@ catch(Exception $e)
 <!-- Onglet -->
     <head>
         <meta charset="utf-8" />
-        <title>Gestion du compte<?php nom(); ?></title>
+        <title>Gestion du compte<?php echo nom(); ?></title>
         <link rel="icon" type="image/png" href="images/logo.png" />
         <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
     </head>

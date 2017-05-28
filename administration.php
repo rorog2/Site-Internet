@@ -30,7 +30,7 @@ function classe(){
 <!-- Onglet -->
     <head>
         <meta charset="utf-8" />
-        <title>Electron's ique<?php nom(); ?></title>
+        <title>Electron's ique<?php echo nom(); ?></title>
         <link rel="icon" type="image/png" href="images/logo.png" />
         <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
     </head>

@@ -4,9 +4,9 @@
     <fieldset>
         <legend>Mot de passe oublié</legend>
         <p>Vous devez choisir une des 2 solution.</p>
-        <label for="pseudo">Pseudo: </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudo..." /><br><br>
+        <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo..." /><br>
         <p>OU</p>
-        <label for="mdp">Email: </label><input type="email" name="email" id="email" placeholder="Email.." /><br><br>
+        <input type="email" name="email" id="email" placeholder="Email..." /><br><br>
         <input type="button" onclick="verification_mdpoublie()" value="Réinitialiser" />
     </fieldset>
 </form>
@@ -35,4 +35,17 @@ document.addEventListener('keypress', function(e) {
     	verification_mdpoublie();
     }
 });
+
+var pseudo = document.getElementById('pseudo');
+document.addEventListener('click', function(e) {
+    document.getElementById('email').disabled = true;
+    document.getElementById('pseudo').disabled = false;
+});
+
+var email = document.getElementById('email');
+document.addEventListener('click', function(e) {
+    document.getElementById('pseudo').disabled = true;
+    document.getElementById('email').disabled = false;
+});
+
 </script>
