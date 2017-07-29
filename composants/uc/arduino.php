@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('affichage_nom.php');
+require('../../affichage_nom.php');
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=electrons;charset=utf8', 'root', 'macedoine224371', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -17,21 +17,21 @@ catch(Exception $e)
     <head>
         <meta charset="utf-8" />
         <title>Electron's ique</title>
-        <link rel="icon" type="image/png" href="images/logo.png" />
-        <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
+        <link rel="icon" type="image/png" href="../../images/logo.png" />
+        <link rel="stylesheet" type="text/css" href="../../css/style_pc.css" />
     </head>
 
 <!-- Corps de la page -->
     <body>
         <!-- Tete de page -->
         <header>
-            <img src="images/logo.png" alt="Logo du site" id="logo_baniere" />
+            <img src="../../images/logo.png" alt="Logo du site" id="logo_baniere" />
             <h1 style="display: inline-block;">Electron's ique</h1>
         </header>
 
         <!-- Navigation -->
         <nav>
-            <?php include('affichage_tableaux.php'); ?>
+            <?php include('../../affichage_tableaux.php'); ?>
         </nav>
         
         <!-- Page -->
