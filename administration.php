@@ -77,6 +77,7 @@ function classe(){
         <footer class="<?php echo classe(); ?>">
             <p id="centrer_texte" class="footer">Vous pouvez nous retrouver sur les réseaux sociaux !</p>
         </footer>
-<!-- Fin de la page -->  
+<!-- Fin de la page -->
+    <script src="jquery.js"></script>
     </body>
 </html>
