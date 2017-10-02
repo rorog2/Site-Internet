@@ -1,3 +1,7 @@
+[user] 
+    email = rorog2@live.fr
+    name = rorog2 
+
 [alias]
   etat = status
   pousser = push
