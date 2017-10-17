@@ -37,7 +37,7 @@ catch(Exception $e)
         <!-- Page -->
         <main>
             <?php if(isset($_SESSION['pseudo'])){ ?>
-                <h1 id="centrer_texte">Gestion du compte</h1>
+                <h6 id="centrer_texte">Gestion du compte</h6>
                 <p>Vous êtes connecté en tant qu<?php if($_SESSION['pseudo'] == 'admin'){ echo '\'administrateur'; } else{ echo 'e: '.$_SESSION['pseudo']; } ?>;</p>
                 <?php
                 if($_SESSION['pseudo'] == 'admin'){

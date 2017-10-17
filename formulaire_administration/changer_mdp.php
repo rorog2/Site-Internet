@@ -1,4 +1,4 @@
-<h1 id="centrer_texte">Changement du mot de passe</h1> 
+<h6 id="centrer_texte">Changement du mot de passe</h6> 
 <form action="traitement.php?changermdp" method="post" id="formulaire" onsubmit="verification_changermdp(); return false;">
     <fieldset>
         <legend>Changer mot de passe</legend>

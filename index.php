@@ -29,7 +29,7 @@ require('affichage_nom.php');
 
     	<!-- Page -->
     	<main>
-    		<h1 id="centrer_texte"><u>ELECTRON'S IQUE</u></h1>
+    		<h6 id="centrer_texte"><u>ELECTRON'S IQUE</u></h6>
     		<center><figure>
                 <img src="images/logo.png" alt="LED" style="width: 40%;" />
                 <figcaption class="logo">Logo du site (LED)</figcaption>

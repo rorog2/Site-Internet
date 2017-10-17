@@ -1,4 +1,4 @@
-<h1 id="centrer_texte">Inscription</h1>
+<h6 id="centrer_texte">Inscription</h6>
 <p>Vous inscrire vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
 <form action="traitement.php?inscription" method="post" id="formulaire" onsubmit="verification_inscription(); return false;">
     <fieldset>

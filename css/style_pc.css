@@ -138,6 +138,11 @@ h4{
 	font-family: comic sans ms;
 }
 
+h6{
+	margin-left: 2em;
+	font-size: 250%;
+	padding-top: -3em;
+}
 /*-----------------------------------------------------------------------------------------*/
 /*Navigation*/
 ul.navigation{

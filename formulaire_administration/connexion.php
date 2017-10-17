@@ -2,7 +2,7 @@
 
 </script>
 
-<h1 id="centrer_texte">Connexion</h1>
+<h6 id="centrer_texte">Connexion</h6>
 <p>Vous connecter vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
 <form action="traitement.php?connexion" method="post" id="formulaire" onsubmit="verification_connexion(); return false;">
     <fieldset>

@@ -1,4 +1,4 @@
-<h1 id="centrer_texte">Mot de passe oublié</h1>
+<h6 id="centrer_texte">Mot de passe oublié</h6>
 <p>Vous connecter vous permettra d'avoir accés au chats, de télécharger des programmes et de participer au développement du programme de calcul en nous faisant remonter les bugs présents.</p> 
 <form action="traitement.php?mdpoublie" method="post" id="formulaire" onsubmit="verification_mdpoublie(); return false;">
     <fieldset>
