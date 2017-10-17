@@ -49,7 +49,7 @@ function classe(){
         </nav>
 
         <!-- Page -->
-        <div class="general">
+        <main>
             <?php
             if(isset($_GET['deconnection'])){
                 session_destroy();
@@ -71,7 +71,7 @@ function classe(){
                 header('Location: administration.php?connexion');
             }
             ?>
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer class="<?php echo classe(); ?>">

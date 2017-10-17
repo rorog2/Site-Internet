@@ -27,7 +27,7 @@ require('affichage_nom.php')
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
             <?php
                 if (isset($_POST['login']) AND isset($_POST['pass'])){
                     $login = $_POST['login'];
@@ -52,7 +52,7 @@ require('affichage_nom.php')
                 <?php
                 }
                 ?>
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>

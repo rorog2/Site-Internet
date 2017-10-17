@@ -45,7 +45,7 @@ function random($car) {
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
             <h1 id="centrer_texte">Vous allez être rediriger vers la page d'accueil</h1>
             <?php
             if(isset($_GET['connexion'])){
@@ -140,7 +140,7 @@ function random($car) {
             }
 
             ?>
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>

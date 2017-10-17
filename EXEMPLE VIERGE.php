@@ -27,9 +27,9 @@ require('affichage_nom.php');
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
             
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>

@@ -57,8 +57,6 @@
 		<input type="radio" name="type" value="email" id="email" /><label class="radio" for="email">Email</label><br />
 		<input type="radio" name="type" value="nom" id="nom" /><label class="radio" for="nom">Nom</label><br />
 		<input type="radio" name="type" value="prenom" id="prenom" /><label class="radio" for="prenom">Prénom</label><br />
-		<input type="radio" name="type" value="del" id="del" /><label class="radio" for="del">Suppression</label><br />
-		<input type="radio" name="type" value="ajout" id="ajout" /><label class="radio" for="ajout">Ajout</label><br />
 		<input type="radio" name="type" value="des" id="des" /><label class="radio" for="des">Désactivation</label><br />
 	</fieldset>
 	<fieldset>
@@ -76,7 +74,7 @@
 <form action="gestion_compte.php?delete" method="post" id="formulaire" onsubmit="verification_delete(); return false;">
 	<fieldset>
 		<legend>Supprimer un compte</legend>
-		<label for="id_sup">ID:</label><input type="number" name="id_sup" id="id_sup" value="1" min="1" max="5000" />
+		<label for="id_sup">ID:</label><input type="number" name="id_sup" id="id_sup" value="1" min="1" max="5000" /><br><br>
 		<input type="button" onclick="verification_delete();" value="Supprimmer" />
 	</fieldset>
 </form>
@@ -84,7 +82,7 @@
 <form action="gestion_compte.php?deac" method="post" id="formulaire" onsubmit="verification_ban(); return false;">
 	<fieldset>
 		<legend>Changer l'état d'un compte</legend>
-		<label for="id_deac">ID:</label><input type="number" name="id_deac" id="id_deac" value="1" min="1" max="5000" />
+		<label for="id_deac">ID:</label><input type="number" name="id_deac" id="id_deac" value="1" min="1" max="5000" /><br><br>
 		<input type="button" onclick="verification_deac;" value="Changer" />
 	</fieldset>
 </form>
@@ -144,8 +142,6 @@ function admin_display(){
 	var email = document.getElementById("email");
 	var nom = document.getElementById("nom");
 	var prenom = document.getElementById("prenom");
-	var suppression = document.getElementById("del");
-	var ajout = document.getElementById("ajout");
 	var desactivation = document.getElementById("des");
 
 	if(mdp === true || email === true || nom === true || prenom === true){

@@ -35,7 +35,7 @@ catch(Exception $e)
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
         <center>
             <ul class="navigation_h">
                 <li class="navigation_h" onclick="document.location.href = 'creationpage.php?createBDD'">Création BDD</li>
@@ -54,7 +54,7 @@ catch(Exception $e)
                 include('creationpage/creation_page.php');
             }
         ?>
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>

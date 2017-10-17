@@ -27,7 +27,7 @@ require('affichage_nom.php');
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
         <?php if(isset($_SESSION['pseudo']) && $_SESSION['pseudo'] == 'admin'){ ?>
             <fieldset><legend>Case a cocher</legend>
                 <p>
@@ -81,9 +81,9 @@ require('affichage_nom.php');
             </fieldset>  
             <?php } 
             else{
-
+				echo '<h1>Vous n\'avez pas accès à cette page !</h1>';
             } ?>  
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>
