@@ -35,14 +35,14 @@ catch(Exception $e)
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
             <?php
                 $contenu = $bdd->query('SELECT * FROM arduino ORDER BY id');
                 while($liste = $contenu->fetch()){
                     echo '<'.$liste['balise'].' '.$liste['attribut'].'>'.$liste['contenu'].'</'.$liste['balise'].'>';
                 }
             ?>
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>

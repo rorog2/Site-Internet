@@ -82,7 +82,7 @@ p.footer{
 }
 
 /*Corps de la page*/
-div.general{
+main{
 	border: 0.18em;
 	border-color: #575757;
 	background-color: #D0D0D0;
@@ -138,6 +138,11 @@ h4{
 	font-family: comic sans ms;
 }
 
+h6{
+	margin-left: 2em;
+	font-size: 250%;
+	padding-top: -3em;
+}
 /*-----------------------------------------------------------------------------------------*/
 /*Navigation*/
 ul.navigation{
@@ -302,6 +307,20 @@ input[type="text"], input[type="password"], input[type="email"]{
 	border-color: #575757;
 	border-width: 0.12em;
 	width: 45%;
+	font-size: 100%;
+	font-family: calibri;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+input[type="number"]{
+	border-radius: 0.3em;
+	border-style: solid;
+	border-color: #575757;
+	border-width: 0.12em;
+	width: 15%;
 	font-size: 100%;
 	font-family: calibri;
 	padding-left: 0.5em;

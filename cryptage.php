@@ -27,7 +27,7 @@ require('affichage_nom.php')
         </nav>
         
         <!-- Page -->
-        <div class="general">
+        <main>
             <?php
                 if (isset($_POST['login']) AND isset($_POST['pass'])){
                     $login = $_POST['login'];
@@ -44,15 +44,15 @@ require('affichage_nom.php')
                 <p>Entrez votre login et votre mot de passe pour le crypter.</p>
                 <fieldset><legend>Cryptage du mot de passe</legend>
                 <form method="post">
-                        <label for="crypt_login">Login:</label><input type="text" name="login" id="crypt_login"><br /><br />
-                        <label for="crypt_pass">Mot de passe:</label><input type="text" name="pass" id="crypt_pass"><br /><br />
-                        <input type="submit" value="Crypter !">
+                        <label for="crypt_login">Login:</label><input type="text" name="login" id="crypt_login" placeholder="Pseudo..."><br /><br />
+                        <label for="crypt_pass">Mot de passe:</label><input type="text" name="pass" id="crypt_pass" placeholder="Mot de passe..."><br /><br />
+                        <input type="submit" value="Crypter">
                 </form>
                 </fieldset>
                 <?php
                 }
                 ?>
-        </div>
+        </main>
 
         <!-- Pied de page -->
         <footer>
