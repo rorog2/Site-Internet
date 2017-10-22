@@ -24,7 +24,7 @@ require('affichage_nom.php');
     	<!-- Navigation -->
     	<nav>
             <p><?php if(isset($_SESSION['pseudo'])){ echo 'Bonjour '.$_SESSION['pseudo'];}else{ echo 'Bonjour visiteur';} ?>, que voulez vous faire ?</p>
-    		<?php include('affichage_tableaux.php'); ?>
+    		<?php include('tableaux/tableaux_navigation.php'); ?>
     	</nav>
 
     	<!-- Page -->

@@ -23,7 +23,7 @@ require('affichage_nom.php')
 
         <!-- Navigation -->
         <nav>
-            <?php include('affichage_tableaux.php'); ?>
+            <?php include('tableaux/tableaux_navigation.php'); ?>
         </nav>
         
         <!-- Page -->
