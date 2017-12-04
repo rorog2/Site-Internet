@@ -38,7 +38,7 @@ catch(Exception $e)
         <main>
             <?php
                 $contenu = $bdd->query('SELECT * FROM arduino ORDER BY id');
-                while($liste = $contenu->fetch()){
+                while($liste = $contenu->fetch(PDO::FETCH_ASSOC)){
                     echo '<'.$liste['balise'].' '.$liste['attribut'].'>'.$liste['contenu'].'</'.$liste['balise'].'>';
                 }
             ?>
