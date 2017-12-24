@@ -8,8 +8,9 @@ require('affichage_nom.php');
 <!-- Onglet -->
     <head>
         <meta charset="utf-8" />
-        <title>Electron's ique</title>
+        <title>Style du site<?php echo nom(); ?></title>
         <link rel="icon" type="image/png" href="images/logo.png" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/style_pc.css" />
     </head>
 
@@ -18,7 +19,7 @@ require('affichage_nom.php');
         <!-- Tete de page -->
         <header>
             <img src="images/logo.png" alt="Logo du site" id="logo_baniere" />
-            <h1 style="display: inline-block;">Style du site<?php echo nom(); ?></h1>
+            <h1 style="display: inline-block;">Electron's ique</h1>
         </header>
 
         <!-- Navigation -->
@@ -78,10 +79,16 @@ require('affichage_nom.php');
                     <img class="important" src="images/attention.png" alt="Important" />
                     <p class="important">Bonjour je suis bien le message important</p>
                 </div>
+            </fieldset>
+            <fieldset><legend>Titre</legend>
+                <h2>Titre H2</h2>
+                <h3>Titre H3</h3>
+                <h4>Titre H4</h4>
+                <h5>Titre H5</h5>
             </fieldset>  
             <?php } 
             else{
-				echo '<h1>Vous n\'avez pas accès à cette page !</h1>';
+				echo '<h2>Vous n\'avez pas accès à cette page !</h2>';
             } ?>  
         </main>
 
