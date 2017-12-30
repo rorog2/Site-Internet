@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.4.1.404">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>5 - D&eacute;couper son programme en fonctions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="5 - D&eacute;couper son programme en fonctions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="5 - D&eacute;couper son programme en fonctions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Cours_C++" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 410px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 410px} body.md-nav-expanded header { padding-left: 424px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Cours_C++</h1>
+    <img src="_logo.png" alt="logo" class="logo"/>
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Recherche
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="5Decoupersonprogrammeenfonctions"
+		  data-hnd-context="11"
+		  data-hnd-title="5 - Découper son programme en fonctions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre1Decouvertedelaprogramma.html">Chapitre 1 - D&eacute;couverte de la programmation C++</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="4Lesstructuresdecontrole.html" title="4 - Les structures de contr&ocirc;le" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="6Lestableaux.html" title="6 - Les tableaux" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>5 - D&eacute;couper son programme en fonctions</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts26">Les types de fonction :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Il y a plusieurs type de fonction suivant si la fonction renvoie une variable ou pas.</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Si la fonction ne renvoie rien, on écrit ceci :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<div class="rvps2"><table width="50%" border="1" cellpadding="1" cellspacing="-1" style="border-color: #000000; border-style: solid; border-collapse: collapse;">
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts20"><br/></span></p>
+<p class="rvps3"><span class="rvts20">Type de fonction</span></p>
+<p class="rvps3"><span class="rvts20"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts20">Exemple</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">&nbsp;</span><span class="rvts13"> void</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts13"><br/></span></p>
+<p class="rvps2"><span class="rvts13"> </span><span class="rvts37">void</span><span class="rvts13"> maFonction</span><span class="rvts15">()</span></p>
+<p class="rvps2"><span class="rvts13"> </span><span class="rvts15">{</span></p>
+<p class="rvps2"><span class="rvts15"> &nbsp; &nbsp; &nbsp; </span><span class="rvts19">//Éléments de la fonction</span></p>
+<p class="rvps2"><span class="rvts15"> }</span></p>
+<p class="rvps2"><span class="rvts13"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Si la fonction renvoie une variable le type de la fonction que vous voulez programmer est le type de la variable que vous voulez retourner.</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Exemple :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Voici ci-dessous un exemple d'une fonction qui ne renvoie aucune variables mais qui prend 2 paramètre :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Exemple de fonction.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts26">Passage par valeur et passage par référence :</span></p>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Exemple pour les explication : fonction qui ajoute 2 à un nombre passé en paramètre.</span></p>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Passage par valeur :</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Passage par valeur.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Le passage par valeur veut dire que, quand un paramètre est passer à la fonction, la valeurs de la variable passé en paramètre est copié dans une seconde variable qui est à l'intérieur de la fonction. Ce qui veut dire que l'on occupe des cases mémoires supplémentaire. Par contre la variable de départ passé en paramètre ne change pas de valeurs, seule la variable de la fonction change de valeurs</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts22">Passage par référence :</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Passage par reference.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Le passage par référence veut dire que, quand un paramètre est passé, l'ont lui attribut un alias qui est le nom de la variable de la fonction. Ce qui veut dire que le minimum de case mémoires sont utilisé. Mais </span><span class="rvts25">ATTENTION !</span><span class="rvts18"> ceci modifie dans le cas de notre exemple la valeur du paramètre.</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Exemple d'une fonction </span><span class="rvts13">echange()</span><span class="rvts18"> avec un passage par rérérence :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Exemple passage par reference.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Passage par référence constante :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Le passage par référence constante permet d'avoir l'avantage de la référence évitant ainsi la copie de la variable et de ne pas pouvoir modifier l'argument de la fonction. Voici un code d'exemple :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) Passage par reference constante.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts26">Utiliser plusieurs fichier pour fragmenter son programme :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Nous allons créer notre fonction </span><span class="rvts13">ajouteDeux()</span><span class="rvts18"> dans un fichier séparé.</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Passage par valeur.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Contenue du fichier </span><span class="rvts13">math.h</span><span class="rvts18"> :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6) Contenu math_h.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Dans le fichier source, il suffit de mettre le code de notre fonction et tous en haut du fichier d'inclure le</span><span class="rvts22"> prototype</span><span class="rvts18"> :</span><span class="rvts38"> </span><span class="rvts15">#include</span><span class="rvts13"> </span><span class="rvts27">"math.h"</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts26">Arguments avec des valeurs par défaut :</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Pour mettre des valeurs par défaut au arguments d'une fonction, il suffit de mettre : </span><span class="rvts13">= valeur</span><span class="rvts18">.</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/7) Valeur par defaut.jpg"></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p></p>
+<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des documents d'aide CHM facilement</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2018 par rorog2. Tous droit r&eacute;serv&eacute;.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
