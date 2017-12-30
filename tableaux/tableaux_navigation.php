@@ -13,6 +13,7 @@
     <li class="navigation" onclick="cryptage();">Crypter .htpasswd</li>  <!-- Admin -->
     <li class="navigation" onclick="creation();">Gestion du site</li>  <!-- Admin -->
     <li class="navigation" onclick="style_css();">Style</li>  <!-- Admin -->
+    <li class="navigation" onclick="aide();">Aide</li>  <!-- Admin -->
     <?php } ?>
     <li class="navigation" onclick="logiciels();">Nos logiciels</li>  <!-- Normal -->
     <li class="navigation" onclick="apropos();">A propos</li>  <!-- Normal -->
@@ -56,6 +57,9 @@
     }
     function style_css(){
         document.location.href = 'style.php';
+    }
+    function aide(){
+        document.location.href = 'https://aide.electronsique.fr';
     }
     function logiciels(){
         document.location.href = 'logiciels.php';
