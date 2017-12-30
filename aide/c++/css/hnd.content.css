@@ -72,156 +72,168 @@ a.rvts12, span.rvts12 /* Font Style */
 }
 span.rvts13
 {
- font-size: 12pt;
- font-family: 'Consolas';
+ font-size: 48pt;
+ font-family: 'Arial Black', 'Gadget', sans-serif;
 }
 span.rvts14
 {
  font-size: 12pt;
  font-family: 'Consolas';
- color: #00b050;
 }
 span.rvts15
 {
  font-size: 12pt;
  font-family: 'Consolas';
- color: #ff0000;
+ color: #00b050;
 }
 span.rvts16
 {
  font-size: 12pt;
  font-family: 'Consolas';
- color: #0000bf;
+ color: #ff0000;
 }
 span.rvts17
 {
  font-size: 12pt;
  font-family: 'Consolas';
- font-weight: bold;
  color: #0000bf;
 }
 span.rvts18
 {
  font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
+ font-family: 'Consolas';
+ font-weight: bold;
+ color: #0000bf;
 }
 span.rvts19
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts20
 {
  font-size: 12pt;
  font-family: 'Consolas';
  color: #7f7f7f;
 }
-span.rvts20
+span.rvts21
 {
  font-size: 14pt;
  font-family: 'Times New Roman', 'Times', serif;
  font-weight: bold;
 }
-span.rvts21
+span.rvts22
 {
  font-size: 8pt;
  font-family: 'Consolas';
  vertical-align: super;
-}
-span.rvts22
-{
- font-size: 12pt;
- font-family: 'Times New Roman', 'Times', serif;
- font-weight: bold;
 }
 span.rvts23
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  font-weight: bold;
- color: #0000ff;
 }
 span.rvts24
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  font-weight: bold;
- color: #00b050;
+ color: #0000ff;
 }
 span.rvts25
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  font-weight: bold;
- color: #ff0000;
+ color: #00b050;
 }
 span.rvts26
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #ff0000;
+}
+span.rvts27
 {
  font-size: 16pt;
  font-family: 'Times New Roman', 'Times', serif;
  font-weight: bold;
 }
-span.rvts27
+span.rvts28
 {
  font-size: 12pt;
  font-family: 'Consolas';
  color: #7030a0;
 }
-span.rvts28
+span.rvts29
 {
  font-size: 12pt;
  font-family: 'Times new romans';
  color: ;
 }
-span.rvts29
-{
- font-weight: bold;
-}
 span.rvts30
 {
- font-size: 12pt;
- font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif;
+ font-weight: bold;
 }
 span.rvts31
 {
  font-size: 12pt;
- font-family: 'Consolas';
- color: #007bbf;
+ font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif;
 }
 span.rvts32
 {
  font-size: 12pt;
  font-family: 'Consolas';
- color: #800080;
+ color: #007bbf;
 }
 span.rvts33
+{
+ font-size: 12pt;
+ font-family: 'Consolas';
+ color: #800080;
+}
+span.rvts34
 {
  font-size: 12pt;
  font-family: 'Consolas';
  font-style: italic;
  color: #ff0000;
 }
-span.rvts34
+span.rvts35
 {
  font-size: 16pt;
  font-family: 'Consolas';
  font-weight: bold;
 }
-span.rvts35
+span.rvts36
 {
  font-size: 14pt;
 }
-span.rvts36
+span.rvts37
 {
  font-size: 12pt;
 }
-span.rvts37
+span.rvts38
 {
  font-size: 12pt;
  font-family: 'Consolas';
  font-style: italic;
  color: #0000ff;
 }
-span.rvts38
+span.rvts39
 {
  font-size: 12pt;
  font-family: 'Times New Roman', 'Times', serif;
  color: #ff0000;
+}
+span.rvts40
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #ffc000;
 }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */

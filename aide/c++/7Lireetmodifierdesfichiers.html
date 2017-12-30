@@ -11,19 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>4 - Les structures de contr&ocirc;le</title>
+  <title>7 - Lire et modifier des fichiers</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Fichiers">
 
 
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="4 - Les structures de contr&ocirc;le">
+  <meta name="twitter:title" content="7 - Lire et modifier des fichiers">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="4 - Les structures de contr&ocirc;le" />
+  <meta property="og:title" content="7 - Lire et modifier des fichiers" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Cours_C++" /> 
@@ -145,9 +145,9 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="4Lesstructuresdecontrole"
-		  data-hnd-context="10"
-		  data-hnd-title="4 - Les structures de contrôle"
+		  data-hnd-id="7Lireetmodifierdesfichiers"
+		  data-hnd-context="19"
+		  data-hnd-title="7 - Lire et modifier des fichiers"
 		>
             
                 <div class="navigation">
@@ -155,60 +155,120 @@
                         <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre1Decouvertedelaprogramma.html">Chapitre 1 - D&eacute;couverte de la programmation C++</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="3Interactionetarithmetiques.html" title="3 - Interaction et arithm&eacute;tiques" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="5Decoupersonprogrammeenfonctions.html" title="5 - D&eacute;couper son programme en fonctions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="6Lestableaux.html" title="6 - Les tableaux" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TP1Lemotmytere.html" title="TP1 - Le mot myt&egrave;re" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>4 - Les structures de contr&ocirc;le</h2>
+            <h2>7 - Lire et modifier des fichiers</h2>
 
             <div class="main-content">
                 
 <p></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Écrire dans un fichier :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Dans un premier temps, pour manipuler les fichiers, il faut importer un module. Ce module s'importe comme d'habitude avec un</span><span class="rvts37"> </span><span class="rvts14">#include</span><span class="rvts19"> et s'intitule </span><span class="rvts14">&lt;fstream&gt;</span><span class="rvts19">.</span></p>
 <p class="rvps2"><span class="rvts37"><br/></span></p>
-<p class="rvps2"><span class="rvts37"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Les conditions</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Condition</span><span class="rvts19"> </span><span class="rvts14">if, else</span><span class="rvts23"> :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Voici ci après l'exemple d'une condition complète :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Condition if, else.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Condition</span><span class="rvts19"> </span><span class="rvts14">switch</span><span class="rvts19"> </span><span class="rvts23">:</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Condition switch.jpg"></p>
+<p class="rvps2"><span class="rvts19">Pour l'importer, il faut faire comme ceci : </span><span class="rvts14">#include &lt;fstream&gt;</span><span class="rvts19">.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Ouvrir un fichier en écriture :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour ouvrir un fichier en écriture, il suffit de faire comme dans l'exemple ci-dessous :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Ouvrir un fichier en ecriture.jpg"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Les boucles :</span></p>
+<p class="rvps2"><span class="rvts19">Mais avec cette technique qui est la base, il peut y avoir des problèmes, alors on teste si le fichier est bien ouvert avant de faire quoi que ce soit :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Les boucles permettent de répéter une action suivant si une condition est vrai ou fausse.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Boucle </span><span class="rvts14">while</span><span class="rvts23"> :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Boucle while.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Tester si le fichier est bien ouvert.jpg"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Écrire dans un flux :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Boucle</span><span class="rvts19"> </span><span class="rvts14">do...while</span><span class="rvts23"> :</span></p>
+<p class="rvps2"><span class="rvts19">Maintenant que notre fichier est ouvert, nous pouvons écrire à l'intérieur. La technique est la même que pour afficher du texte dans la console. Il faut utiliser les chevron :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Boucle do...while.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Ecrire dans un flux.jpg"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Boucle</span><span class="rvts19"> </span><span class="rvts14">for</span><span class="rvts19"> </span><span class="rvts23">:</span></p>
+<div class="rvps3"><table width="75%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px; margin: 0px auto;">
+<tr valign="middle">
+<td valign="middle" style="padding: 1px; background-color: #ff9595;"><p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, si vous souhaiter ajouter des informations à la fin du documents s'il existe, il faut écrire dans la déclaration: </span></p>
+<p class="rvps2"><span class="rvts14"> ofstream monFlux("Chemin", ios::app);</span><span class="rvts6"> !</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) Boucle for.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Lire dans un fichier :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Déclaration du flux :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour lire dans un fichier la méthode est la même concernent la déclaration du flux. Sauf que dans le cas d'une ouverture, la classe à appeler est : </span><span class="rvts14">ifstream</span><span class="rvts19">.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Lecture dans le flux :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour lire le contenu d'un fichier, il y a 3 manière de le lire :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts19">Ligne par ligne, avec </span><span class="rvts14">getline()</span><span class="rvts19">;</span></li>
+<li class="rvps2"><span class="rvts19">Mot par mot, avec les chevrons </span><span class="rvts14">&gt;&gt;</span><span class="rvts19">;</span></li>
+<li class="rvps2"><span class="rvts19">Caractère par caractère, avec </span><span class="rvts14">get()</span><span class="rvts19">.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Ligne par ligne :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Ligne par ligne.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Mot par mot :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) Mot par mot.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Caractère par caractère :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6) Caractere par caractere.jpg"></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Si plusieurs méthode de lecture sont employé :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/7) Plusieurs methode de lecture.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Lire un fichier dans sa globalité :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/8) Lire un fichier entier.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Quelques astuces :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Fermer prématurément un fichier :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour refermer un fichier prématurément, il suffit d'écrire : </span><span class="rvts14">monFlux.close()</span><span class="rvts19">. </span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des documents d'aide PDF facilement</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/creer-des-livres-numeriques-epub">Produire des livres électroniques facilement</a></p>
 
             </div>
             

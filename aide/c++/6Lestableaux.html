@@ -13,7 +13,7 @@
 
   <title>6 - Les tableaux</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Tableaux,Variables,String,Fonctions">
 
 
 
@@ -89,7 +89,7 @@
         <li role="presentation" class="tab active">
             <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
                 <i class="glyphicon glyphicon-list"></i>
-                Contents
+                Contenu
             </a>
         </li>
       
@@ -155,7 +155,7 @@
                         <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre1Decouvertedelaprogramma.html">Chapitre 1 - D&eacute;couverte de la programmation C++</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="5Decoupersonprogrammeenfonctions.html" title="5 - D&eacute;couper son programme en fonctions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="5Decoupersonprogrammeenfonctions.html" title="5 - D&eacute;couper son programme en fonctions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="7Lireetmodifierdesfichiers.html" title="7 - Lire et modifier des fichiers" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -167,6 +167,141 @@
             <div class="main-content">
                 
 <p></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Les tableaux statiques :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les tableaux permettent de regrouper plusieurs informations de même type dans une seule variable et ainsi de gagner du temps sur l'affichage ou le traitement.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Déclaration d'un tableau statique :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Un tableau statique ce déclare de cette manière : </span><span class="rvts26">TYPE</span><span class="rvts23"> </span><span class="rvts25">NOM</span><span class="rvts23"> [ </span><span class="rvts40">TAILLE</span><span class="rvts23"> ] ;</span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici un exemple de déclaration de tableau statique :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Declaration tableau statique.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<div class="rvps3"><table width="75%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px; margin: 0px auto;">
+<tr valign="middle">
+<td valign="middle" style="padding: 1px; background-color: #ff9595;"><p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, si vous souhaiter déclarer la taille du tableaux avec une variable, il faut </span><span class="rvts30">ABSOLUMENT</span><span class="rvts6"> que la variable soit une constante !</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Accès aux éléments du tableau :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour accéder aux éléments du tableau, il suffit d’appelé la variable en rajoutant des crochets et la position désirer que ce soit pour le remplissage ou le lecture de la case que vous souhaiter sélectionner.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Exemple :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Ecriture tableaux statique.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour le parcourir, nous pouvons utiliser une boucle </span><span class="rvts14">for</span><span class="rvts19"> comme ceci :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Parcourir un tableau statique avec for.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Parcourir son tableau avec une fonction :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour parcourir son tableau avec une fonction, il nous faut savoir qu'il y as quelque restriction :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts19">Une fonction ne peut pas renvoyer de tableau statique.</span></li>
+<li class="rvps2"><span class="rvts19">Un tableau statique ne peut passer en argument de fonction qu'en temps que référence.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Bien sur pour cela il n'est pas nécessaire de mettre le &amp; après le type de variable, ceci est fait automatiquement. Par contre il faut rajouter un second argument qui contiendra la taille du tableau.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici un exemple pour illustrer mes propos :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Tableau statique et fonction.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Les tableaux dynamiques :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les tableaux dynamique ce base sur le même principe que les tableaux statiques mais eux peuvent prendre toutes les tailles. Il peuvent par exemple contenir que 3 valeurs, ou bien 8, ou 19...</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Déclaration d'un tableau dynamique :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour déclarer un tableau dynamique, il faut commencer par importer une biothèque de cette manière : </span><span class="rvts16">#include</span><span class="rvts14"> </span><span class="rvts28">&lt;vector&gt;</span><span class="rvts19">.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Ensuite pour la déclaration à proprement dite, il faut faire comme ceci : </span><span class="rvts23">vector&lt;</span><span class="rvts26">TYPE</span><span class="rvts23">&gt; </span><span class="rvts25">NOM</span><span class="rvts23"> ( </span><span class="rvts40">TAILLE</span><span class="rvts23"> ) ;</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici un exemple de déclaration de tableau dynamique :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Declaration tableaux dynamiques.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">REMARQUE : Avec ce type de tableaux, on peut directement remplir toutes les cases du tableau avec une donnée.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici un exemple :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Remplir directement tableau dynamique.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Accès aux éléments du tableau dynamique :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour accéder aux éléments d'un tableaux dynamique, la méthode est la même que pour accéder aux éléments d'un tableau statique.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Changer la taille :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour changer la taille du tableau on peut faire plusieurs chose.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Commençons par ajouter une valeur en fin de tableau :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) push_back.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant supprimons la dernière valeur du tableau :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) pop_back.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour finir, voici la dernière méthode que je vous présenterai, il s'agit de la méthode permettant de savoir la taille du tableau :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) size.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Les tableaux dynamiques et les fonctions :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Dans le cas d'un tableau dynamique, le traitement pour une fonction est plus simple, il suffit de passer le tableau en passage par référence constante comme ceci :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6) Tableaux dynamiques et fonctions.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Les tableaux multi-dimensionnel :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les tableaux multi-dimensionnel ce déclare de la même manière que les tableaux statique, ce sont des tableaux statique mais avec 2 dimension.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Il ce déclare de la manière suivante :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<div class="rvps3"><table width="60%" border="1" cellpadding="1" cellspacing="-1" style="border-color: #000000; border-style: solid; border-collapse: collapse; margin: 0px auto;">
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts38">int</span><span class="rvts14"> tableau[</span><span class="rvts28">5</span><span class="rvts14">][</span><span class="rvts28">4</span><span class="rvts14">];</span></p>
+<p class="rvps2"><span class="rvts14"> </span><span class="rvts20">//tableau[tailleX][tailleY];</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Ce tableau contiendra en résumer 4 tableaux statique de 5 cases.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/outils-creation-aide">Création d'aide CHM, PDF, DOC et HTML d'une même source</a></p>
 
