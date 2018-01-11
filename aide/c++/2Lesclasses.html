@@ -155,7 +155,7 @@
                         <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre2LaPOOProgrammationorien.html">Chapitre 2 - La POO (Programmation orient&eacute; objet)</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="1Laveritesurlesstring.html" title="1 - La v&eacute;rit&eacute; sur les string" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre3Creervospropresfenetres.html" title="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="1Laveritesurlesstring.html" title="1 - La v&eacute;rit&eacute; sur les string" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="3Lessurchargesdoperateurs.html" title="3 - Les surcharges d'op&eacute;rateurs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -167,6 +167,118 @@
             <div class="main-content">
                 
 <p></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Créer une classe :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour créer une classe, il faut déjà lui trouver un nom comme pour une variable, mais ATTENTION, le nom d'une classe doit toujours commencer par une majuscule. Dans cette classe nous allons mettre des attribut qui eux on comme particularité de toujours commencer par </span><span class="rvts14">"m_"</span><span class="rvts19">. Ensuite vous pourrez mettre vos méthodes qui elle reprennent tous les concepts des fonctions.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici un exemple de prototype de classe :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Exemple de class.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<div class="rvps3"><table width="75%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px; margin: 0px auto;">
+<tr valign="middle">
+<td valign="middle" style="padding: 1px; background-color: #ff9595;"><p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, il faut penser à mettre un point virgule après la class !!!!</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Droits d'accès et encapsulation :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Dans la POO, il existe deux type de droits d'accès :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts19">public : les méthodes et attributs peuvent être appeler de l’extérieur;</span></li>
+<li class="rvps2"><span class="rvts19">private : les méthodes et attributs ne peuvent être appeler de nulle par, par défaut tous ce qui est dans une classe est private.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant voici le code précédant mais en tenant compte des droits d'accès :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Exemple de class encapsuler.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Séparer prototype et définitions :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Le but de séparer prototype et définitions est pour les mêmes raisons que les fonction pour que le programmes soit découper en plusieurs fichier et ainsi portable.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Personnage.h :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Personnage_h.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Personnage.cpp :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Personnage_cpp.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Constructeurs et destructeurs :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Le rôle du constructeur est d'initialiser les attributs de la classe et le rôle du destructeurs est de supprimer les attribut allouer dynamiquement.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Constructeur :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Personnage_h.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Personnage_cpp.jpg"></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts27">OU</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Personnage_cpp autre.jpg"></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Surcharger le constructeur :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Surcharge Personnage_h.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Surcharge Personnage_cpp.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Le destructeur :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Destructeur Personnage_h.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Destructeur Personnage_cpp.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Les méthodes constantes :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les méthodes constantes sont des méthodes qui sont que en "lecture seule". Exemple : si vous avez une méthode qui ce contente juste d'afficher quelque chose a l'écran, c'est une méthode constante. Les méthodes constante sont, en résumé, les méthodes qui ne modifie aucun attribut.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Exemple de méthode constante :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/8) Methode constante.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Associer des classe entre elles :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour faire cela, il suffit d'appeler une autre classe dans notre classe et de mettre un attribut avec notre classe.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">MEGA RESUME :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/9) Resumer.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creez-des-fichiers-daide-pour-le-framework-qt-help">Créer des fichiers d'aide Qt Help multi-plateformes</a></p>
 

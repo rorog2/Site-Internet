@@ -11,19 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>8 - Les pointeurs</title>
+  <title>Utiliser le presse papier avec Qt</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="Variables">
+  <meta name="keywords" content="">
 
 
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="8 - Les pointeurs">
+  <meta name="twitter:title" content="Utiliser le presse papier avec Qt">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="8 - Les pointeurs" />
+  <meta property="og:title" content="Utiliser le presse papier avec Qt" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Cours_C++" /> 
@@ -145,100 +145,30 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="8Lespointeurs"
-		  data-hnd-context="21"
-		  data-hnd-title="8 - Les pointeurs"
+		  data-hnd-id="UtiliserlepressepapieravecQt"
+		  data-hnd-context="22"
+		  data-hnd-title="Utiliser le presse papier avec Qt"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre1Decouvertedelaprogramma.html">Chapitre 1 - D&eacute;couverte de la programmation C++</a></li>
+                        <li><a href="SupplementsQt.html">Suppl&eacute;ments Qt</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TP1Lemotmytere.html" title="TP1 - Le mot myt&egrave;re" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="SupplementsQt.html" title="Suppl&eacute;ments Qt" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="SupplementsQt.html" title="Suppl&eacute;ments Qt" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SecurisationdunchatavecQt.html" title="S&eacute;curisation d'un chat avec Qt" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>8 - Les pointeurs</h2>
+            <h2>Utiliser le presse papier avec Qt</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Les pointeurs sont des variables qui sont capable de contenir que des adresse de variables déclaré.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Afficher l'adresse d'une variable :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour afficher l'adresse d'une variable, il suffit de rajouter le préfixe </span><span class="rvts14">&amp;</span><span class="rvts19"> au nom de la variable. Voici ci-après un exemple :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Afficher l adresse d une variable.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">L'adresse retourné sera codé en hexadécimal sous le format suivant :</span><span class="rvts14"> 0x22ff1c</span><span class="rvts19">.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Les pointeurs :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Déclarer un pointeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour déclarer un pointeur, il faut ajouter le préfixe * au nom du pointeur. Pour savoir quelle type mettre au pointeur, il faut mettre le même type que l'adresse de la variable pointer. Voici un exemple :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<div class="rvps3"><table width="75%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px; margin: 0px auto;">
-<tr valign="middle">
-<td valign="middle" style="padding: 1px; background-color: #ff9595;"><p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, il ne faut JAMAIS déclarer un pointeur vide, il faut toujours le déclarer avec la valeur 0 !</span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-</td>
-</tr>
-</table>
-</div>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Type de pointeur.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Stocker une adresse dans un pointeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour stocker une adresse dans un pointeur, il faut procéder comme ceci :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Stockage adresse dans pointeur.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Afficher l'adresse du pointeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour visualiser l'adresse du pointer par le pointeur, il suffit de la montrer dans le flux de sortie standard comme ci-dessous :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Afficher adresse pointer.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Accéder à la valeur pointer :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour accéder à la valeur pointer, rien de plus simple, il suffit de mettre le pointeur dans le flux de sortie standard en rajoutant le préfixe * comme ci-après :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) Afficher la valeur pointer.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">L'allocation dynamique de la mémoire :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">L'allocation dynamique de la mémoire permet d'avoir le contrôle complet de la mémoire dans le programme. Voici un exemple pour vous faire comprendre le fonctionnement :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6) Allocation dynamique de la memoire.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/creer-des-livres-numeriques-epub">Générer des livres électroniques EPub facilement</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creer-ebooks-pour-kindle-amazon">Produire facilement des livres électroniques Kindle</a></p>
 
             </div>
             

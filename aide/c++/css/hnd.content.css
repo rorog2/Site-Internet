@@ -235,6 +235,18 @@ span.rvts40
  font-weight: bold;
  color: #ffc000;
 }
+span.rvts41
+{
+ font-size: 12pt;
+ font-family: 'Consolas';
+ font-weight: bold;
+}
+span.rvts42
+{
+ font-size: 12pt;
+ font-family: 'Consolas';
+ font-style: italic;
+}
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {
