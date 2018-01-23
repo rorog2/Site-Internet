@@ -11,19 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>8 - Les pointeurs</title>
+  <title>4 - Les classes et les pointeurs</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="Variables,Pointeurs">
+  <meta name="keywords" content="Pointeurs,Classe">
 
 
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="8 - Les pointeurs">
+  <meta name="twitter:title" content="4 - Les classes et les pointeurs">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="8 - Les pointeurs" />
+  <meta property="og:title" content="4 - Les classes et les pointeurs" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Cours_C++" /> 
@@ -145,55 +145,77 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="8Lespointeurs"
-		  data-hnd-context="21"
-		  data-hnd-title="8 - Les pointeurs"
+		  data-hnd-id="4Lesclassesetlespointeurs"
+		  data-hnd-context="28"
+		  data-hnd-title="4 - Les classes et les pointeurs"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre1Decouvertedelaprogramma.html">Chapitre 1 - D&eacute;couverte de la programmation C++</a></li>
+                        <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre2LaPOOProgrammationorien.html">Chapitre 2 - La POO (Programmation orient&eacute; objet)</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre1Decouvertedelaprogramma.html" title="Chapitre 1 - D&eacute;couverte de la programmation C++" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TP1Lemotmytere.html" title="TP1 - Le mot myt&egrave;re" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TP2LaPOOenpratiqueavecZFraction.html" title="TP2 - La POO en pratique avec ZFraction" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="5Lheritage.html" title="5 - L'h&eacute;ritage" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>8 - Les pointeurs</h2>
+            <h2>4 - Les classes et les pointeurs</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Les pointeurs sont des variables qui sont capable de contenir que des adresse de variables déclaré.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Afficher l'adresse d'une variable :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour afficher l'adresse d'une variable, il suffit de rajouter le préfixe </span><span class="rvts14">&amp;</span><span class="rvts19"> au nom de la variable. Voici ci-après un exemple :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Afficher l adresse d une variable.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">L'adresse retourné sera codé en hexadécimal sous le format suivant :</span><span class="rvts14"> 0x22ff1c</span><span class="rvts19">.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Les pointeurs :</span></p>
+<p class="rvps2"><span class="rvts27">Pointeur d'une classe vers une autre :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Ici, nous allons voir comment un personnage peut changer d'arme.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant, notre code ressemble à celui-ci :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Classe personnage avec arme.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici le schéma que l'on peut associer à ce code:</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Déclarer un pointeur :</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Shema 1.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour déclarer un pointeur, il faut ajouter le préfixe * au nom du pointeur. Pour savoir quelle type mettre au pointeur, il faut mettre le même type que l'adresse de la variable pointer. Voici un exemple :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant, mettons un pointeur à la place d'une instance de classe classique :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Classe personnage avec arme pointer.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici son schéma :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Shema 2.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant, le personnage peut changer d'arme ou ne plus en avoir car l'objet </span><span class="rvts14">Arme</span><span class="rvts19"> ne lui appartient pas, il pointe vers lui.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Gestion de l'allocation dynamique :</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Allocation de la mémoire pour l'objet :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant, il faut déclarer le pointeur pour qu'il pointe vers quelque chose, sinon sa ne sert à rien. Il faudra écrire le code suivant dans le constructeur de notre classe </span><span class="rvts14">Personnage</span><span class="rvts19"> :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) Code constructeur Personnage.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Ensuite, on à le choix de mettre ou non des arguments dans la déclaration suivant quelle constructeur on souhaite appeler.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <div class="rvps3"><table width="75%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px; margin: 0px auto;">
 <tr valign="middle">
 <td valign="middle" style="padding: 1px; background-color: #ff9595;"><p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, il ne faut JAMAIS déclarer un pointeur vide, il faut toujours le déclarer avec la valeur 0 !</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, par sécurité, il faut penser à initialiser le pointeur à 0 !!!!</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 </td>
 </tr>
@@ -201,44 +223,49 @@
 </div>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Type de pointeur.jpg"></p>
+<p class="rvps2"><span class="rvts23">Désallocation de la mémoire pour l'objet :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Il faut penser à supprimer notre pointeur lors de la destruction de </span><span class="rvts14">Personnage</span><span class="rvts19">, sinon il occupera de la mémoire pour rien. Il faut mettre le code suivant :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6) Destructeur personnage.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Avec ce code dans le destructeur de la classe </span><span class="rvts14">Personnage</span><span class="rvts19">, tous sera supprimer correctement.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Penser que </span><span class="rvts14">m_arme</span><span class="rvts23"> est un pointeur ! :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Stocker une adresse dans un pointeur :</span></p>
+<p class="rvps2"><span class="rvts19">Maintenant, il faut penser que </span><span class="rvts14">m_arme</span><span class="rvts19"> est un pointeur, donc remplacer les éléments en rapport avec </span><span class="rvts14">m_arme</span><span class="rvts19"> par </span><span class="rvts14">-&gt;</span><span class="rvts19">.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour stocker une adresse dans un pointeur, il faut procéder comme ceci :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Stockage adresse dans pointeur.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Afficher l'adresse du pointeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour visualiser l'adresse du pointer par le pointeur, il suffit de la montrer dans le flux de sortie standard comme ci-dessous :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Afficher adresse pointer.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Accéder à la valeur pointer :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour accéder à la valeur pointer, rien de plus simple, il suffit de mettre le pointeur dans le flux de sortie standard en rajoutant le préfixe * comme ci-après :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5) Afficher la valeur pointer.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/7) Remplacement.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">L'allocation dynamique de la mémoire :</span></p>
+<p class="rvps2"><span class="rvts27">Le pointeur this :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">L'allocation dynamique de la mémoire permet d'avoir le contrôle complet de la mémoire dans le programme. Voici un exemple pour vous faire comprendre le fonctionnement :</span></p>
+<p class="rvps2"><span class="rvts19">Le pointeur this, sert à pointer la classe vers elle même. Utiliser comme sa on peut avoir l'adresse de la classe et utiliser avec *, on peut pointer vers la classe elle même.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6) Allocation dynamique de la memoire.jpg"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Le constructeur de copie :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Le constructeur de copie sert quand vous voulez créer un objet à partie d'un objet.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Exemple de code de constructeur de copie :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/8) Constructeur de copie h.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/9) Constructeur de copie cpp.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"> &nbsp;</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/creer-des-livres-numeriques-epub">Générer des livres électroniques EPub facilement</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/generation-de-site-web-iphone">Créer des documentations web iPhone</a></p>
 
             </div>
             

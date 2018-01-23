@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 5.4.1.404">
+  <meta name="generator" content="HelpNDoc Personal Edition 5.5.0.486">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -155,7 +155,7 @@
                         <li><a href="CoursC.html">Cours C++</a></li><li><a href="Chapitre2LaPOOProgrammationorien.html">Chapitre 2 - La POO (Programmation orient&eacute; objet)</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="2Lesclasses.html" title="2 - Les classes" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre3Creervospropresfenetres.html" title="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="2Lesclasses.html" title="2 - Les classes" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TP2LaPOOenpratiqueavecZFraction.html" title="TP2 - La POO en pratique avec ZFraction" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -189,32 +189,175 @@
 <p class="rvps2"><span class="rvts27">Les opérateurs de comparaisons :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">L'opérateur </span><span class="rvts14">==</span><span class="rvts23"> :</span></p>
+<p class="rvps2"><span class="rvts23">Exemple avec l'opérateur </span><span class="rvts14">==</span><span class="rvts23"> :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Operateur_eq_h.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Cette fonction est à mettre dans le fichier de la classe pour plus de lisibilité mais pas dans la classe car ce n'est pas une méthode de la classe.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Dans le fichier </span><span class="rvts14">.cpp</span><span class="rvts19">, il faut ajouter une méthode car cette surcharge ne peut être directement du faite qu'elle est hors de la classe et que les attributs de la classe sont privé.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Operateur_eq_cpp_methode.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Operateur_eq_cpp.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Bien sur ne pas oublier dans le surcharge de passer les arguments en références constante pour ne pas qu'il y ai de copie, ni de modification.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Tableau des opérateurs de comparaison et arithmétiques :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<div class="rvps3"><table width="50%" border="1" cellpadding="1" cellspacing="1" style="border-color: #000000; border-style: solid; background-color: #ffffff; border-spacing: 1px; margin: 0px auto;">
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">==</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator==</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">!=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator!=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">&lt;</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator&lt;</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">&gt;</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator&gt;</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">&lt;=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator&lt;=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">&gt;=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator&gt;=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">+</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator+</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">+=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator+=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td height="15" valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">-</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td height="15" valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator-</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">-=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator-=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">*</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator*</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">*=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator*=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">/</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator/</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">/=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator/=</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">%</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator%</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14">%=</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+</td>
+<td valign="middle" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts14">operator%=</span></p>
+</td>
+</tr>
+</table>
+</div>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Les opérateurs de flux :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Operateur_cout_h.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Operateur_cout_cpp_methode.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Operateur_cout_h.png"></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
 <p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts11">Créé avec HelpNDoc Personal Edition: </span><a class="rvts12" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creer-ebooks-pour-kindle-amazon">Produire facilement des livres électroniques Kindle</a></p>
 
