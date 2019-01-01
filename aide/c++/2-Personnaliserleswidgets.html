@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>2 - Les classes</title>
+  <title>2 - Personnaliser les widgets</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="2 - Les classes">
+  <meta name="twitter:title" content="2 - Personnaliser les widgets">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="2 - Les classes" />
+  <meta property="og:title" content="2 - Personnaliser les widgets" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Cours_C++" /> 
@@ -147,24 +147,24 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="2Lesclasses"
-		  data-hnd-context="14"
-		  data-hnd-title="2 - Les classes"
+		  data-hnd-id="2-Personnaliserleswidgets"
+		  data-hnd-context="7"
+		  data-hnd-title="2 - Personnaliser les widgets"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="Chapitre2LaPOOProgrammationorien.html">Chapitre 2 - La POO (Programmation orient&eacute; objet)</a></li>
+                        <li><a href="Chapitre3Creervospropresfenetres.html">Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre2LaPOOProgrammationorien.html" title="Chapitre 2 - La POO (Programmation orient&eacute; objet)" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="1Laveritesurlesstring.html" title="1 - La v&eacute;rit&eacute; sur les string" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="3Lessurchargesdoperateurs.html" title="3 - Les surcharges d'op&eacute;rateurs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre3Creervospropresfenetres.html" title="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="1Compilervotrepremierefenetreave.html" title="1 - Compiler votre premi&egrave;re fen&ecirc;tre avec Qt" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="3-Utilisezlessignauxetlesslots.html" title="3 - Utilisez les signaux et les slots" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>2 - Les classes</h2>
+            <h2>2 - Personnaliser les widgets</h2>
 
             <div class="main-content">
                 
@@ -172,109 +172,35 @@
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Créer une classe :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour créer une classe, il faut déjà lui trouver un nom comme pour une variable, mais ATTENTION, le nom d'une classe doit toujours commencer par une majuscule. Dans cette classe nous allons mettre des attribut qui eux on comme particularité de toujours commencer par </span><span class="rvts14">"m_"</span><span class="rvts19">. Ensuite vous pourrez mettre vos méthodes qui elle reprennent tous les concepts des fonctions.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Voici un exemple de prototype de classe :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Exemple de class.jpg"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<div class="rvps3"><table width="75%" border="0" cellpadding="1" cellspacing="2" style="border-width: 0px; border-spacing: 2px; margin: 0px auto;">
-<tr valign="middle">
-<td valign="middle" style="padding: 1px; background-color: #ff9595;"><p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp;</span><span class="rvts30">Attention !</span><span class="rvts6">, il faut penser à mettre un point virgule après la class !!!!</span></p>
-<p class="rvps3"><span class="rvts6"><br/></span></p>
-</td>
-</tr>
-</table>
-</div>
+<p class="rvps2"><span class="rvts27">Personnalisé les widgets :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Pour personnalisé les widgets, rien de plus simple, il faut utiliser des méthodes (accesseur ou mutateur) pour modifier le comportement des attributs du widget. Pour cela, il faut pour récupérer une valeurs, mettre le préfixe </span><span class="rvts14">get</span><span class="rvts19"> devant et pour modifier une propriété du widget mettre le préfixe </span><span class="rvts14">set</span><span class="rvts19">.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Quelque propriété utile :</span></p>
+<p class="rvps2"><span class="rvts19">- toolTip -&gt; infobulle</span></p>
+<p class="rvps2"><span class="rvts19">- font -&gt; </span><span class="rvts43">button.setFont(QFont("Courrier"))</span></p>
+<p class="rvps2"><span class="rvts19">- cursor -&gt; le curseur</span></p>
+<p class="rvps2"><span class="rvts19">- icon -&gt; </span><span class="rvts43">setIcon(QIcon("smile.png"))</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Créer une fenêtre dans une classe :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Droits d'accès et encapsulation :</span></p>
+<p class="rvps2"><span class="rvts19">Voici ci-dessous un exemple de fenêtre dans une classe. Cette méthode est très fortement conseiller car en cas de plusieurs fenêtres, il suffit de créer plusieurs classes.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Dans la POO, il existe deux type de droits d'accès :</span></p>
-<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts19">public : les méthodes et attributs peuvent être appeler de l’extérieur;</span></li>
-<li class="rvps2"><span class="rvts19">private : les méthodes et attributs ne peuvent être appeler de nulle par, par défaut tous ce qui est dans une classe est private.</span></li>
-</ul>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1 - entete fenetre.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Maintenant voici le code précédant mais en tenant compte des droits d'accès :</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Exemple de class encapsuler.jpg"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2 - code fenetre.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3 - code main fenetre.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Séparer prototype et définitions :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Le but de séparer prototype et définitions est pour les mêmes raisons que les fonction pour que le programmes soit découper en plusieurs fichier et ainsi portable.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Personnage.h :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Personnage_h.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Personnage.cpp :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4) Personnage_cpp.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Constructeurs et destructeurs :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Le rôle du constructeur est d'initialiser les attributs de la classe et le rôle du destructeurs est de supprimer les attribut allouer dynamiquement.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Constructeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Personnage_h.jpg"></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Personnage_cpp.jpg"></p>
-<p class="rvps3"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><span class="rvts27">OU</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3) Personnage_cpp autre.jpg"></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts23"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Surcharger le constructeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Surcharge Personnage_h.jpg"></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Surcharge Personnage_cpp.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts23">Le destructeur :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1) Destructeur Personnage_h.jpg"></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2) Destructeur Personnage_cpp.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Les méthodes constantes :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Les méthodes constantes sont des méthodes qui sont que en "lecture seule". Exemple : si vous avez une méthode qui ce contente juste d'afficher quelque chose a l'écran, c'est une méthode constante. Les méthodes constante sont, en résumé, les méthodes qui ne modifie aucun attribut.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Exemple de méthode constante :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/8) Methode constante.jpg"></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">Associer des classe entre elles :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19">Pour faire cela, il suffit d'appeler une autre classe dans notre classe et de mettre un attribut avec notre classe.</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps2"><span class="rvts27">MEGA RESUME :</span></p>
-<p class="rvps2"><span class="rvts19"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/9) Resumer.png"></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
@@ -282,7 +208,7 @@
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts12">Créé avec HelpNDoc Personal Edition: </span><a class="rvts13" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creez-des-fichiers-daide-pour-le-framework-qt-help">Créer des fichiers d'aide Qt Help multi-plateformes</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Créé avec HelpNDoc Personal Edition: </span><a class="rvts13" href="https://www.helpndoc.com/fr">Éditeur de documentation CHM facile</a></p>
 
             </div>
             

@@ -57,23 +57,23 @@ a.rvts10, span.rvts10
  color: #008000;
  text-decoration: underline;
 }
-span.rvts11 /* Font Style */
+span.rvts11
+{
+ font-size: 48pt;
+ font-family: 'Arial Black', 'Gadget', sans-serif;
+}
+span.rvts12 /* Font Style */
 {
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #c0c0c0;
 }
-a.rvts12, span.rvts12 /* Font Style */
+a.rvts13, span.rvts13 /* Font Style */
 {
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #6666ff;
  text-decoration: underline;
-}
-span.rvts13
-{
- font-size: 48pt;
- font-family: 'Arial Black', 'Gadget', sans-serif;
 }
 span.rvts14
 {
@@ -246,6 +246,11 @@ span.rvts42
  font-size: 12pt;
  font-family: 'Consolas';
  font-style: italic;
+}
+span.rvts43
+{
+ font-size: 11pt;
+ font-family: 'Consolas';
 }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */

@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt</title>
+  <title>3 - Utilisez les signaux et les slots</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt">
+  <meta name="twitter:title" content="3 - Utilisez les signaux et les slots">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" />
+  <meta property="og:title" content="3 - Utilisez les signaux et les slots" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Cours_C++" /> 
@@ -147,46 +147,59 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="Chapitre3Creervospropresfenetres"
-		  data-hnd-context="2"
-		  data-hnd-title="Chapitre 3 - Créer vos propres fenêtres avec Qt"
+		  data-hnd-id="3-Utilisezlessignauxetlesslots"
+		  data-hnd-context="31"
+		  data-hnd-title="3 - Utilisez les signaux et les slots"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        
+                        <li><a href="Chapitre3Creervospropresfenetres.html">Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="6-Elementsstatiquesetamitie.html" title="6 - &Eacute;l&eacute;ments statiques et amiti&eacute;" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="1Compilervotrepremierefenetreave.html" title="1 - Compiler votre premi&egrave;re fen&ecirc;tre avec Qt" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre3Creervospropresfenetres.html" title="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="2-Personnaliserleswidgets.html" title="2 - Personnaliser les widgets" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre4Utiliserlabibliotheques.html" title="Chapitre 4 - Utiliser la biblioth&egrave;que standard" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt</h2>
+            <h2>3 - Utilisez les signaux et les slots</h2>
 
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts11">CHAPITRE 3 : Créer vos propres fenêtres avec Qt</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Le principe des signaux et slots</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les signaux et les slots permettent de connecter des actions faites sur les widgets avec des méthodes de notre classe pour par exemple fermer le programme quand on clique sur un bouton.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les signaux sont les actions faite sur le widget. Par exemple: cliquer, relachement...</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Les slots sont les méthodes qui sont connecter avec signaux. Dans l'exemple, le slot est la méthode qui ferme l'application.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Connexion entre les signaux et les slots:</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">La ligne de code à écrire est: </span><span class="rvts43">QObject::connect(m_bouton, SIGNAL(clicked()), qApp, SLOT(quit()))</span></p>
+<p class="rvps2"><span class="rvts43"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Ici, </span><span class="rvts43">m_bouton</span><span class="rvts19"> est le widget concerné, </span><span class="rvts43">clicked</span><span class="rvts19"> est le type de signal, qApp est la classe qui contient le slot et </span><span class="rvts43">quit()</span><span class="rvts19"> est le slot.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
 <p></p>
-<p class="rvps4" style="clear: both;"><span class="rvts12">Créé avec HelpNDoc Personal Edition: </span><a class="rvts13" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites">Créer des documents d'aide HTML facilement</a></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Créé avec HelpNDoc Personal Edition: </span><a class="rvts13" href="https://www.helpndoc.com/fr/tour-des-fonctionnalites/creez-des-fichiers-daide-pour-le-framework-qt-help">Produire des aides en ligne pour les applications Qt</a></p>
 
             </div>
             
