@@ -13,7 +13,7 @@
 
   <title>3 - Utilisez les signaux et les slots</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Classe,Qt,Pointeurs">
 
 
 
@@ -157,7 +157,7 @@
                         <li><a href="Chapitre3Creervospropresfenetres.html">Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre3Creervospropresfenetres.html" title="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="2-Personnaliserleswidgets.html" title="2 - Personnaliser les widgets" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Chapitre4Utiliserlabibliotheques.html" title="Chapitre 4 - Utiliser la biblioth&egrave;que standard" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Chapitre3Creervospropresfenetres.html" title="Chapitre 3 - Cr&eacute;er vos propres fen&ecirc;tres avec Qt" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="2-Personnaliserleswidgets.html" title="2 - Personnaliser les widgets" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="4-Apprenezautiliserlesboitesdedi.html" title="4 - Apprenez &agrave; utiliser les boites de dialogues usuelles" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -190,6 +190,43 @@
 <p class="rvps2"><span class="rvts43"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19">Ici, </span><span class="rvts43">m_bouton</span><span class="rvts19"> est le widget concerné, </span><span class="rvts43">clicked</span><span class="rvts19"> est le type de signal, qApp est la classe qui contient le slot et </span><span class="rvts43">quit()</span><span class="rvts19"> est le slot.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Des paramètres dans les signaux et les slots :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Maintenant, voyons comment, en connectant un signal avec un slot, nous pouvons lui faire passer une valeurs. Pour cela, nous allons prendre en exemple un Slider où sa valeur de glissement sera affiché sur un écran LCD (cf ci-dessous).</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/1 - Exemple passage valeur.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici le code correspondant à cette fenêtre:</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/2 - Code de l exemple.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Et maintenant, voyons comment faire afficher la valeur du Slider dans le LCD:</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/3 - Connexion exemple.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Le secret est donc de mettre dans les parenthèses du signal et du slot le type de la valeur passer entre les deux.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts27">Créer ses propres signaux et slots :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici comment créer ses propres slots :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/4 - Creer ses slots.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Comme vous le voyer, il est absolument nécessaire d'importer la macro </span><span class="rvts43">Q_OBJECT</span><span class="rvts19"> dans le header de la classe.</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Voici maintenant comment déclarer un signal (plus rare) :</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/5 - Creer ses signaux.png"></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/6 - Code signaux.png"></p>
+<p class="rvps3"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Comme vous le voyer pour créer un signal, il est nécessaire de mettre le mot clé </span><span class="rvts43">emit</span><span class="rvts19"> pour que le signal soit émit dans la connexion.</span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
 <p class="rvps2"><span class="rvts19"><br/></span></p>
